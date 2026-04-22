@@ -198,6 +198,8 @@ referências
 exercícios-de-depuração-e-teste-de-algorimos
 exemplo-1--
 exemplo-2--
+respostas
+exercício-1-1
 programação-orientada-a-objetos---parte-1
 exercícios-de-programação-orientada-a-objetos---parte-1
 programação-orientada-a-objetos---parte-2

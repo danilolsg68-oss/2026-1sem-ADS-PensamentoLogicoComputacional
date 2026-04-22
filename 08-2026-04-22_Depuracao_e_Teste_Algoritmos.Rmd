@@ -77,7 +77,7 @@ Um erro lógico acontece quando o código está sintaticamente correto e faz sen
 x = 10
 y = 5
 media = x + y / 2
-print("A média entre 10 e 5 é : , "media)
+print("A média entre 10 e 5 é : ", media)
 ```
 
 Saída

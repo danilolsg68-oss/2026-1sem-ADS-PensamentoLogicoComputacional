@@ -333,6 +333,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="8.6.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exemplo-1--"><i class="fa fa-check"></i><b>8.6.1</b> Exemplo 1 -</a></li>
 <li class="chapter" data-level="8.6.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exemplo-2--"><i class="fa fa-check"></i><b>8.6.2</b> Exemplo 2 -</a></li>
+<li class="chapter" data-level="8.6.3" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#respostas"><i class="fa fa-check"></i><b>8.6.3</b> Respostas</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html"><i class="fa fa-check"></i><b>9</b> Programação Orientada a Objetos - Parte 1</a>
@@ -408,7 +409,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb144"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb144-1"><a href="depuração-e-teste-de-algorimos.html#cb144-1" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb144-2"><a href="depuração-e-teste-de-algorimos.html#cb144-2" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb144-3"><a href="depuração-e-teste-de-algorimos.html#cb144-3" tabindex="-1"></a>media <span class="op">=</span> x <span class="op">+</span> y <span class="op">/</span> <span class="dv">2</span></span>
-<span id="cb144-4"><a href="depuração-e-teste-de-algorimos.html#cb144-4" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;A média entre 10 e 5 é : , &quot;</span>media)</span></code></pre></div>
+<span id="cb144-4"><a href="depuração-e-teste-de-algorimos.html#cb144-4" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;A média entre 10 e 5 é : &quot;</span>, media)</span></code></pre></div>
 <p>Saída</p>
 <pre class="batch"><code>12,5</code></pre>
 <hr />
@@ -593,7 +594,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb149-8"><a href="depuração-e-teste-de-algorimos.html#cb149-8" tabindex="-1"></a></span>
 <span id="cb149-9"><a href="depuração-e-teste-de-algorimos.html#cb149-9" tabindex="-1"></a><span class="cf">for</span> ( posicao_atual ) <span class="kw">in</span> <span class="bu">range</span>( total_de_elementos ):</span>
 <span id="cb149-10"><a href="depuração-e-teste-de-algorimos.html#cb149-10" tabindex="-1"></a>    <span class="bu">print</span>( dias_semana[posicao_atual] )</span></code></pre></div>
-<p>Resolução</p>
+<p>Depuração manual</p>
 <pre class="text"><code>+-----------+----------------------+------------------+------------------+
 | Iteração  | total_de_elementos   | posicao_atual    | Valor Acessado   |
 +-----------+----------------------+------------------+------------------+
@@ -664,7 +665,118 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 | 12       | 3      | 4       | 2     | 3      | 12             |
 +----------+--------+---------+-------+--------+----------------+</code></pre>
 <p>Exercício 1 -</p>
+<p>Considere o modelo apresentado em aula para percorrer uma lista utilizando índice.</p>
+<p>Agora, elabore um programa em Python que:</p>
+<ul>
+<li>Crie uma lista chamada estados_brasil contendo as 27 siglas das unidades federativas do Brasil:
+AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO</li>
+<li>Calcule o total de elementos da lista utilizando a função len().</li>
+<li>Utilize uma variável de controle chamada posicao_atual, iniciando com valor 0.</li>
+<li>Utilize uma estrutura de repetição while para percorrer a lista.</li>
+<li>Imprima cada sigla em uma linha.</li>
+</ul>
+<div class="sourceCode" id="cb153"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb153-1"><a href="depuração-e-teste-de-algorimos.html#cb153-1" tabindex="-1"></a></span>
+<span id="cb153-2"><a href="depuração-e-teste-de-algorimos.html#cb153-2" tabindex="-1"></a>estados_brasil <span class="op">=</span> [</span>
+<span id="cb153-3"><a href="depuração-e-teste-de-algorimos.html#cb153-3" tabindex="-1"></a>    <span class="st">&quot;AC&quot;</span>, <span class="st">&quot;AL&quot;</span>, <span class="st">&quot;AP&quot;</span>, <span class="st">&quot;AM&quot;</span>, <span class="st">&quot;BA&quot;</span>, <span class="st">&quot;CE&quot;</span>, <span class="st">&quot;DF&quot;</span>, <span class="st">&quot;ES&quot;</span>, <span class="st">&quot;GO&quot;</span>,</span>
+<span id="cb153-4"><a href="depuração-e-teste-de-algorimos.html#cb153-4" tabindex="-1"></a>    <span class="st">&quot;MA&quot;</span>, <span class="st">&quot;MT&quot;</span>, <span class="st">&quot;MS&quot;</span>, <span class="st">&quot;MG&quot;</span>, <span class="st">&quot;PA&quot;</span>, <span class="st">&quot;PB&quot;</span>, <span class="st">&quot;PR&quot;</span>, <span class="st">&quot;PE&quot;</span>, <span class="st">&quot;PI&quot;</span>,</span>
+<span id="cb153-5"><a href="depuração-e-teste-de-algorimos.html#cb153-5" tabindex="-1"></a>    <span class="st">&quot;RJ&quot;</span>, <span class="st">&quot;RN&quot;</span>, <span class="st">&quot;RS&quot;</span>, <span class="st">&quot;RO&quot;</span>, <span class="st">&quot;RR&quot;</span>, <span class="st">&quot;SC&quot;</span>, <span class="st">&quot;SP&quot;</span>, <span class="st">&quot;SE&quot;</span>, <span class="st">&quot;TO&quot;</span></span>
+<span id="cb153-6"><a href="depuração-e-teste-de-algorimos.html#cb153-6" tabindex="-1"></a>]</span>
+<span id="cb153-7"><a href="depuração-e-teste-de-algorimos.html#cb153-7" tabindex="-1"></a></span>
+<span id="cb153-8"><a href="depuração-e-teste-de-algorimos.html#cb153-8" tabindex="-1"></a>_________________ <span class="op">=</span> <span class="bu">len</span>(__________________)</span>
+<span id="cb153-9"><a href="depuração-e-teste-de-algorimos.html#cb153-9" tabindex="-1"></a></span>
+<span id="cb153-10"><a href="depuração-e-teste-de-algorimos.html#cb153-10" tabindex="-1"></a>_________________ <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb153-11"><a href="depuração-e-teste-de-algorimos.html#cb153-11" tabindex="-1"></a></span>
+<span id="cb153-12"><a href="depuração-e-teste-de-algorimos.html#cb153-12" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;_____________________&quot;</span>)</span>
+<span id="cb153-13"><a href="depuração-e-teste-de-algorimos.html#cb153-13" tabindex="-1"></a></span>
+<span id="cb153-14"><a href="depuração-e-teste-de-algorimos.html#cb153-14" tabindex="-1"></a><span class="cf">while</span> _______________ <span class="op">&lt;</span> _________________ :</span>
+<span id="cb153-15"><a href="depuração-e-teste-de-algorimos.html#cb153-15" tabindex="-1"></a>    <span class="bu">print</span>( _________________[_______________])</span>
+<span id="cb153-16"><a href="depuração-e-teste-de-algorimos.html#cb153-16" tabindex="-1"></a>    _____________ <span class="op">=</span> ___________________ <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
+<pre class="text"><code>
+</code></pre>
+</div>
+<div id="respostas" class="section level3 hasAnchor" number="8.6.3">
+<h3><span class="header-section-number">8.6.3</span> Respostas<a href="depuração-e-teste-de-algorimos.html#respostas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="exercício-1-1" class="section level4 hasAnchor" number="8.6.3.1">
+<h4><span class="header-section-number">8.6.3.1</span> Exercício 1<a href="depuração-e-teste-de-algorimos.html#exerc%C3%ADcio-1-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb155"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb155-1"><a href="depuração-e-teste-de-algorimos.html#cb155-1" tabindex="-1"></a></span>
+<span id="cb155-2"><a href="depuração-e-teste-de-algorimos.html#cb155-2" tabindex="-1"></a>estados_brasil <span class="op">=</span> [</span>
+<span id="cb155-3"><a href="depuração-e-teste-de-algorimos.html#cb155-3" tabindex="-1"></a>    <span class="st">&quot;AC&quot;</span>, <span class="st">&quot;AL&quot;</span>, <span class="st">&quot;AP&quot;</span>, <span class="st">&quot;AM&quot;</span>, <span class="st">&quot;BA&quot;</span>, <span class="st">&quot;CE&quot;</span>, <span class="st">&quot;DF&quot;</span>, <span class="st">&quot;ES&quot;</span>, <span class="st">&quot;GO&quot;</span>,</span>
+<span id="cb155-4"><a href="depuração-e-teste-de-algorimos.html#cb155-4" tabindex="-1"></a>    <span class="st">&quot;MA&quot;</span>, <span class="st">&quot;MT&quot;</span>, <span class="st">&quot;MS&quot;</span>, <span class="st">&quot;MG&quot;</span>, <span class="st">&quot;PA&quot;</span>, <span class="st">&quot;PB&quot;</span>, <span class="st">&quot;PR&quot;</span>, <span class="st">&quot;PE&quot;</span>, <span class="st">&quot;PI&quot;</span>,</span>
+<span id="cb155-5"><a href="depuração-e-teste-de-algorimos.html#cb155-5" tabindex="-1"></a>    <span class="st">&quot;RJ&quot;</span>, <span class="st">&quot;RN&quot;</span>, <span class="st">&quot;RS&quot;</span>, <span class="st">&quot;RO&quot;</span>, <span class="st">&quot;RR&quot;</span>, <span class="st">&quot;SC&quot;</span>, <span class="st">&quot;SP&quot;</span>, <span class="st">&quot;SE&quot;</span>, <span class="st">&quot;TO&quot;</span></span>
+<span id="cb155-6"><a href="depuração-e-teste-de-algorimos.html#cb155-6" tabindex="-1"></a>]</span>
+<span id="cb155-7"><a href="depuração-e-teste-de-algorimos.html#cb155-7" tabindex="-1"></a></span>
+<span id="cb155-8"><a href="depuração-e-teste-de-algorimos.html#cb155-8" tabindex="-1"></a>total_de_elementos <span class="op">=</span> <span class="bu">len</span>(estados_brasil)</span>
+<span id="cb155-9"><a href="depuração-e-teste-de-algorimos.html#cb155-9" tabindex="-1"></a></span>
+<span id="cb155-10"><a href="depuração-e-teste-de-algorimos.html#cb155-10" tabindex="-1"></a>posicao_atual <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb155-11"><a href="depuração-e-teste-de-algorimos.html#cb155-11" tabindex="-1"></a></span>
+<span id="cb155-12"><a href="depuração-e-teste-de-algorimos.html#cb155-12" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Estados do Brasil:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb155-13"><a href="depuração-e-teste-de-algorimos.html#cb155-13" tabindex="-1"></a></span>
+<span id="cb155-14"><a href="depuração-e-teste-de-algorimos.html#cb155-14" tabindex="-1"></a><span class="cf">while</span> posicao_atual <span class="op">&lt;</span> total_de_elementos:</span>
+<span id="cb155-15"><a href="depuração-e-teste-de-algorimos.html#cb155-15" tabindex="-1"></a>    <span class="bu">print</span>(estados_brasil[posicao_atual])</span>
+<span id="cb155-16"><a href="depuração-e-teste-de-algorimos.html#cb155-16" tabindex="-1"></a>    posicao_atual <span class="op">=</span> posicao_atual <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
+<pre class="text"><code>
++----------+-----------+---------+----------------+
+| Iteração | total     | Posicao | Valor Impresso |
+|          | elementos | atual   |                |
++----------+-----------+---------+----------------+
+| Inicio   | C         | 0       | --             |
++----------+-----------+---------+----------------+
+| 1        | 27        | 1       | AC             |
++----------+-----------+---------+----------------+
+| 2        | 27        | 2       | AL             |
++----------+-----------+---------+----------------+
+| 3        | 27        | 3       | AP             |
++----------+-----------+---------+----------------+
+| 4        | 27        | 4       | AM             |
++----------+-----------+---------+----------------+
+| 5        | 27        | 5       | BA             |
++----------+-----------+---------+----------------+
+| 6        | 27        | 6       | CE             |
++----------+-----------+---------+----------------+
+| 7        | 27        | 7       | DF             |
++----------+-----------+---------+----------------+
+| 8        | 27        | 8       | ES             |
++----------+-----------+---------+----------------+
+| 9        | 27        | 9       | GO             |
++----------+-----------+---------+----------------+
+| 10       | 27        | 10      | MA             |
++----------+-----------+---------+----------------+
+| 11       | 27        | 11      | MT             |
++----------+-----------+---------+----------------+
+| 12       | 27        | 12      | MS             |
++----------+-----------+---------+----------------+
+| 13       | 27        | 13      | MG             |
++----------+-----------+---------+----------------+
+| 14       | 27        | 14      | PA             |
++----------+-----------+---------+----------------+
+| 15       | 27        | 15      | PB             |
++----------+-----------+---------+----------------+
+| 16       | 27        | 16      | PR             |
++----------+-----------+---------+----------------+
+| 17       | 27        | 17      | PE             |
++----------+-----------+---------+----------------+
+| 18       | 27        | 18      | PI             |
++----------+-----------+---------+----------------+
+| 19       | 27        | 19      | RJ             |
++----------+-----------+---------+----------------+
+| 20       | 27        | 20      | RN             |
++----------+-----------+---------+----------------+
+| 21       | 27        | 21      | RS             |
++----------+-----------+---------+----------------+
+| 22       | 27        | 22      | RO             |
++----------+-----------+---------+----------------+
+| 23       | 27        | 23      | RR             |
++----------+-----------+---------+----------------+
+| 24       | 27        | 24      | SC             |
++----------+-----------+---------+----------------+
+| 25       | 27        | 25      | SP             |
++----------+-----------+---------+----------------+
+| 26       | 27        | 26      | SE             |
++----------+-----------+---------+----------------+
+| 27       | 27        | 27      | TO             |
++----------+-----------+---------+----------------+</code></pre>
 
+</div>
 </div>
 </div>
 </div>
