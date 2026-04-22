@@ -23,7 +23,7 @@
 <meta name="author" content="Professor Miguél Suares" />
 
 
-<meta name="date" content="2026-04-15" />
+<meta name="date" content="2026-04-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,8 +55,9 @@
 
 
 <style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -66,7 +67,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -306,7 +307,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html"><i class="fa fa-check"></i><b>8</b> Depuração e Teste de Algorimos</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exerc%C3%ADcios-de-depura%C3%A7%C3%A3o-e-teste-de-algorimos"><i class="fa fa-check"></i><b>8.1</b> Exercícios de Depuração e Teste de Algorimos</a></li>
+<li class="chapter" data-level="8.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#o-que-%C3%A9-depura%C3%A7%C3%A3o-de-c%C3%B3digo-debugging"><i class="fa fa-check"></i><b>8.1</b> O que é Depuração de Código (DEBUGGING)</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#defini%C3%A7%C3%A3o-depura%C3%A7%C3%A3o-%C3%A9-o-processo-de-encontrar-isolar-e-resolver-erros-de-codifica%C3%A7%C3%A3o-conhecidos-como-bugs-em-programas-de-software.-a-depura%C3%A7%C3%A3o-ajuda-a-descobrir-a-causa-de-erros-de-codifica%C3%A7%C3%A3o-evitar-problemas-de-fun%C3%A7%C3%A3o-do-software-e-melhorar-o-desempenho-geral-do-software.-camilo-quiroz-v%C3%A1zquez"><i class="fa fa-check"></i><b>8.1.1</b> Definição: Depuração é o processo de encontrar, isolar e resolver erros de codificação conhecidos como bugs em programas de software. A depuração ajuda a descobrir a causa de erros de codificação, evitar problemas de função do software e melhorar o desempenho geral do software. <strong>Camilo Quiroz-Vázquez</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#tipos-de-erros-a-depurar-em-um-programa"><i class="fa fa-check"></i><b>8.2</b> Tipos de Erros a depurar em um programa</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#erros-sem%C3%A2nticos"><i class="fa fa-check"></i><b>8.2.1</b> Erros semânticos</a></li>
+<li class="chapter" data-level="8.2.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#erros-de-sintaxe"><i class="fa fa-check"></i><b>8.2.2</b> Erros de sintaxe</a></li>
+<li class="chapter" data-level="8.2.3" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#erros-l%C3%B3gicos"><i class="fa fa-check"></i><b>8.2.3</b> Erros lógicos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#ferramentas-de-depura%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.3</b> Ferramentas de Depuração</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#ambientes-de-desenvolvimento-integrados-ides"><i class="fa fa-check"></i><b>8.3.1</b> Ambientes de desenvolvimento integrados (IDEs)</a></li>
+<li class="chapter" data-level="8.3.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#antes-sem-utilizar-ides"><i class="fa fa-check"></i><b>8.3.2</b> Antes: SEM UTILIZAR IDEs</a></li>
+<li class="chapter" data-level="8.3.3" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#agora-utilizando-ides"><i class="fa fa-check"></i><b>8.3.3</b> Agora: UTILIZANDO IDEs</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#depurando-na-i.d.e."><i class="fa fa-check"></i><b>8.4</b> Depurando na I.D.E.</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#executando-o-c%C3%B3digo-normalmente-sem-depurar-no-vscode"><i class="fa fa-check"></i><b>8.4.1</b> Executando o código normalmente (sem depurar) no VSCode:</a></li>
+<li class="chapter" data-level="8.4.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#executando-o-c%C3%B3digo-depurando-no-vscode-debugging"><i class="fa fa-check"></i><b>8.4.2</b> Executando o código depurando no VSCode (DEBUGGING):</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#refer%C3%AAncias"><i class="fa fa-check"></i><b>8.5</b> REFERÊNCIAS:</a></li>
+<li class="chapter" data-level="8.6" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exerc%C3%ADcios-de-depura%C3%A7%C3%A3o-e-teste-de-algorimos"><i class="fa fa-check"></i><b>8.6</b> Exercícios de Depuração e Teste de Algorimos</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exemplo-1--"><i class="fa fa-check"></i><b>8.6.1</b> Exemplo 1 -</a></li>
+<li class="chapter" data-level="8.6.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exemplo-2--"><i class="fa fa-check"></i><b>8.6.2</b> Exemplo 2 -</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html"><i class="fa fa-check"></i><b>9</b> Programação Orientada a Objetos - Parte 1</a>
 <ul>
@@ -491,7 +518,7 @@ mora em São Paulo.</p>
 <span id="cb129-3"><a href="entrada-e-saída.html#cb129-3" tabindex="-1"></a>    [<span class="st">&quot;Carlos&quot;</span>, <span class="dv">30</span>]</span>
 <span id="cb129-4"><a href="entrada-e-saída.html#cb129-4" tabindex="-1"></a>]</span>
 <span id="cb129-5"><a href="entrada-e-saída.html#cb129-5" tabindex="-1"></a></span>
-<span id="cb129-6"><a href="entrada-e-saída.html#cb129-6" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;usuarios.txt&quot;</span>, <span class="st">&quot;w&quot;</span>) <span class="im">as</span> arq:</span>
+<span id="cb129-6"><a href="entrada-e-saída.html#cb129-6" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;exemplo3-usuarios.csv&quot;</span>, <span class="st">&quot;w&quot;</span>) <span class="im">as</span> arq:</span>
 <span id="cb129-7"><a href="entrada-e-saída.html#cb129-7" tabindex="-1"></a>    <span class="cf">for</span> nome, idade <span class="kw">in</span> usuarios:</span>
 <span id="cb129-8"><a href="entrada-e-saída.html#cb129-8" tabindex="-1"></a>        arq.write(<span class="ss">f&quot;</span><span class="sc">{</span>nome<span class="sc">}</span><span class="ss">,</span><span class="sc">{</span>idade<span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span></code></pre></div>
 <div id="saída-exemplo-3" class="section level4 hasAnchor" number="7.2.1.1">
@@ -518,7 +545,7 @@ DICA: Use as facilidades do Python.</p>
 <span id="cb131-13"><a href="entrada-e-saída.html#cb131-13" tabindex="-1"></a>    }</span>
 <span id="cb131-14"><a href="entrada-e-saída.html#cb131-14" tabindex="-1"></a>]</span>
 <span id="cb131-15"><a href="entrada-e-saída.html#cb131-15" tabindex="-1"></a></span>
-<span id="cb131-16"><a href="entrada-e-saída.html#cb131-16" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;exemplo2.csv&quot;</span>, <span class="st">&quot;w&quot;</span>, newline<span class="op">=</span><span class="st">&quot;&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf-8&quot;</span>) <span class="im">as</span> variavel_arquivo:</span>
+<span id="cb131-16"><a href="entrada-e-saída.html#cb131-16" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;exemplo4.csv&quot;</span>, <span class="st">&quot;w&quot;</span>, newline<span class="op">=</span><span class="st">&quot;&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf-8&quot;</span>) <span class="im">as</span> variavel_arquivo:</span>
 <span id="cb131-17"><a href="entrada-e-saída.html#cb131-17" tabindex="-1"></a>    formatador_csv <span class="op">=</span> csv.writer(variavel_arquivo)</span>
 <span id="cb131-18"><a href="entrada-e-saída.html#cb131-18" tabindex="-1"></a>    </span>
 <span id="cb131-19"><a href="entrada-e-saída.html#cb131-19" tabindex="-1"></a>    <span class="co"># escrevendo a primeira linha: cabeçalho (colunas)</span></span>
@@ -560,7 +587,7 @@ DICA: Use as facilidades do Python.</p>
 <span id="cb133-13"><a href="entrada-e-saída.html#cb133-13" tabindex="-1"></a>    }</span>
 <span id="cb133-14"><a href="entrada-e-saída.html#cb133-14" tabindex="-1"></a>]</span>
 <span id="cb133-15"><a href="entrada-e-saída.html#cb133-15" tabindex="-1"></a></span>
-<span id="cb133-16"><a href="entrada-e-saída.html#cb133-16" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;exemplo2.json&quot;</span>, <span class="st">&quot;w&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf-8&quot;</span>) <span class="im">as</span> variavel_arquivo:</span>
+<span id="cb133-16"><a href="entrada-e-saída.html#cb133-16" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;exemplo5.json&quot;</span>, <span class="st">&quot;w&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf-8&quot;</span>) <span class="im">as</span> variavel_arquivo:</span>
 <span id="cb133-17"><a href="entrada-e-saída.html#cb133-17" tabindex="-1"></a>    json.dump(variavel_dicionario, variavel_arquivo, ensure_ascii<span class="op">=</span><span class="va">False</span>, indent<span class="op">=</span><span class="dv">4</span>)</span></code></pre></div>
 <div id="saída-exemplo-5" class="section level4 hasAnchor" number="7.2.2.1">
 <h4><span class="header-section-number">7.2.2.1</span> Saída exemplo 5<a href="entrada-e-saída.html#sa%C3%ADda-exemplo-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -694,7 +721,7 @@ Faça um programa python para ler estes arquivos.</p>
 <p><strong>Exemplo 8</strong> - Leia a planilha excel CSV da cliente ANA e imprima os valores na tela;</p>
 <div class="sourceCode" id="cb137"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb137-1"><a href="entrada-e-saída.html#cb137-1" tabindex="-1"></a>usuarios_lidos <span class="op">=</span> []</span>
 <span id="cb137-2"><a href="entrada-e-saída.html#cb137-2" tabindex="-1"></a></span>
-<span id="cb137-3"><a href="entrada-e-saída.html#cb137-3" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;usuarios.csv&quot;</span>, <span class="st">&quot;r&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf-8&quot;</span>) <span class="im">as</span> variavel_arquivo:</span>
+<span id="cb137-3"><a href="entrada-e-saída.html#cb137-3" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;exemplo3-usuarios.csv&quot;</span>, <span class="st">&quot;r&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf-8&quot;</span>) <span class="im">as</span> variavel_arquivo:</span>
 <span id="cb137-4"><a href="entrada-e-saída.html#cb137-4" tabindex="-1"></a>    <span class="cf">for</span> linha <span class="kw">in</span> variavel_arquivo:</span>
 <span id="cb137-5"><a href="entrada-e-saída.html#cb137-5" tabindex="-1"></a>        nome, idade <span class="op">=</span> linha.strip().split(<span class="st">&quot;,&quot;</span>)</span>
 <span id="cb137-6"><a href="entrada-e-saída.html#cb137-6" tabindex="-1"></a>        <span class="cf">if</span> idade.isdigit():</span>

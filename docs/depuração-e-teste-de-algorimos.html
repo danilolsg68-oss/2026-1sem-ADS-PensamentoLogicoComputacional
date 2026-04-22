@@ -23,7 +23,7 @@
 <meta name="author" content="Professor Miguél Suares" />
 
 
-<meta name="date" content="2026-04-15" />
+<meta name="date" content="2026-04-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,8 +55,9 @@
 
 
 <style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -66,7 +67,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -306,7 +307,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html"><i class="fa fa-check"></i><b>8</b> Depuração e Teste de Algorimos</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exerc%C3%ADcios-de-depura%C3%A7%C3%A3o-e-teste-de-algorimos"><i class="fa fa-check"></i><b>8.1</b> Exercícios de Depuração e Teste de Algorimos</a></li>
+<li class="chapter" data-level="8.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#o-que-%C3%A9-depura%C3%A7%C3%A3o-de-c%C3%B3digo-debugging"><i class="fa fa-check"></i><b>8.1</b> O que é Depuração de Código (DEBUGGING)</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#defini%C3%A7%C3%A3o-depura%C3%A7%C3%A3o-%C3%A9-o-processo-de-encontrar-isolar-e-resolver-erros-de-codifica%C3%A7%C3%A3o-conhecidos-como-bugs-em-programas-de-software.-a-depura%C3%A7%C3%A3o-ajuda-a-descobrir-a-causa-de-erros-de-codifica%C3%A7%C3%A3o-evitar-problemas-de-fun%C3%A7%C3%A3o-do-software-e-melhorar-o-desempenho-geral-do-software.-camilo-quiroz-v%C3%A1zquez"><i class="fa fa-check"></i><b>8.1.1</b> Definição: Depuração é o processo de encontrar, isolar e resolver erros de codificação conhecidos como bugs em programas de software. A depuração ajuda a descobrir a causa de erros de codificação, evitar problemas de função do software e melhorar o desempenho geral do software. <strong>Camilo Quiroz-Vázquez</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#tipos-de-erros-a-depurar-em-um-programa"><i class="fa fa-check"></i><b>8.2</b> Tipos de Erros a depurar em um programa</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#erros-sem%C3%A2nticos"><i class="fa fa-check"></i><b>8.2.1</b> Erros semânticos</a></li>
+<li class="chapter" data-level="8.2.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#erros-de-sintaxe"><i class="fa fa-check"></i><b>8.2.2</b> Erros de sintaxe</a></li>
+<li class="chapter" data-level="8.2.3" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#erros-l%C3%B3gicos"><i class="fa fa-check"></i><b>8.2.3</b> Erros lógicos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#ferramentas-de-depura%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.3</b> Ferramentas de Depuração</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#ambientes-de-desenvolvimento-integrados-ides"><i class="fa fa-check"></i><b>8.3.1</b> Ambientes de desenvolvimento integrados (IDEs)</a></li>
+<li class="chapter" data-level="8.3.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#antes-sem-utilizar-ides"><i class="fa fa-check"></i><b>8.3.2</b> Antes: SEM UTILIZAR IDEs</a></li>
+<li class="chapter" data-level="8.3.3" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#agora-utilizando-ides"><i class="fa fa-check"></i><b>8.3.3</b> Agora: UTILIZANDO IDEs</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#depurando-na-i.d.e."><i class="fa fa-check"></i><b>8.4</b> Depurando na I.D.E.</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#executando-o-c%C3%B3digo-normalmente-sem-depurar-no-vscode"><i class="fa fa-check"></i><b>8.4.1</b> Executando o código normalmente (sem depurar) no VSCode:</a></li>
+<li class="chapter" data-level="8.4.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#executando-o-c%C3%B3digo-depurando-no-vscode-debugging"><i class="fa fa-check"></i><b>8.4.2</b> Executando o código depurando no VSCode (DEBUGGING):</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#refer%C3%AAncias"><i class="fa fa-check"></i><b>8.5</b> REFERÊNCIAS:</a></li>
+<li class="chapter" data-level="8.6" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exerc%C3%ADcios-de-depura%C3%A7%C3%A3o-e-teste-de-algorimos"><i class="fa fa-check"></i><b>8.6</b> Exercícios de Depuração e Teste de Algorimos</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exemplo-1--"><i class="fa fa-check"></i><b>8.6.1</b> Exemplo 1 -</a></li>
+<li class="chapter" data-level="8.6.2" data-path="depuração-e-teste-de-algorimos.html"><a href="depuração-e-teste-de-algorimos.html#exemplo-2--"><i class="fa fa-check"></i><b>8.6.2</b> Exemplo 2 -</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html"><i class="fa fa-check"></i><b>9</b> Programação Orientada a Objetos - Parte 1</a>
 <ul>
@@ -342,10 +369,303 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="depuração-e-teste-de-algorimos" class="section level1 hasAnchor" number="8">
 <h1><span class="header-section-number">Aula 8</span> Depuração e Teste de Algorimos<a href="depuração-e-teste-de-algorimos.html#depura%C3%A7%C3%A3o-e-teste-de-algorimos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>“escrever código corresponde a 90% de programação; o debugging do código representa os outros 90%” FURTADO, A. L. Python: Programação para Leigos. Rio de Janeiro: Alta Books, 2021. Capítulo 10</p>
+<div id="o-que-é-depuração-de-código-debugging" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> O que é Depuração de Código (DEBUGGING)<a href="depuração-e-teste-de-algorimos.html#o-que-%C3%A9-depura%C3%A7%C3%A3o-de-c%C3%B3digo-debugging" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="definição-depuração-é-o-processo-de-encontrar-isolar-e-resolver-erros-de-codificação-conhecidos-como-bugs-em-programas-de-software.-a-depuração-ajuda-a-descobrir-a-causa-de-erros-de-codificação-evitar-problemas-de-função-do-software-e-melhorar-o-desempenho-geral-do-software.-camilo-quiroz-vázquez" class="section level3 hasAnchor" number="8.1.1">
+<h3><span class="header-section-number">8.1.1</span> Definição: Depuração é o processo de encontrar, isolar e resolver erros de codificação conhecidos como bugs em programas de software. A depuração ajuda a descobrir a causa de erros de codificação, evitar problemas de função do software e melhorar o desempenho geral do software. <strong>Camilo Quiroz-Vázquez</strong><a href="depuração-e-teste-de-algorimos.html#defini%C3%A7%C3%A3o-depura%C3%A7%C3%A3o-%C3%A9-o-processo-de-encontrar-isolar-e-resolver-erros-de-codifica%C3%A7%C3%A3o-conhecidos-como-bugs-em-programas-de-software.-a-depura%C3%A7%C3%A3o-ajuda-a-descobrir-a-causa-de-erros-de-codifica%C3%A7%C3%A3o-evitar-problemas-de-fun%C3%A7%C3%A3o-do-software-e-melhorar-o-desempenho-geral-do-software.-camilo-quiroz-v%C3%A1zquez" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr />
+<p><img src="images/exemplo01-08-08.svg" /><!-- --></p>
+<p>Compreender as diferentes categorias de falhas que podem ocorrer em um sistema ajuda engenheiros e desenvolvedores a escolherem a estratégia mais adequada para corrigir problemas no código sempre que um erro aparece. Entre essas situações, destacam-se alguns tipos comuns de erros que demandam atividades de depuração:</p>
+<hr />
+</div>
+</div>
+<div id="tipos-de-erros-a-depurar-em-um-programa" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Tipos de Erros a depurar em um programa<a href="depuração-e-teste-de-algorimos.html#tipos-de-erros-a-depurar-em-um-programa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="erros-semânticos" class="section level3 hasAnchor" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Erros semânticos<a href="depuração-e-teste-de-algorimos.html#erros-sem%C3%A2nticos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Erro semântico ocorre quando o computador entende o código, mas o significado do que foi escrito não corresponde ao que o programador pretendia. O código está sintaticamente correto, mas o significado da instrução está errado dentro do contexto do problema.</p>
+<div class="sourceCode" id="cb140"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb140-1"><a href="depuração-e-teste-de-algorimos.html#cb140-1" tabindex="-1"></a>idade <span class="op">=</span> <span class="st">&quot;25&quot;</span></span>
+<span id="cb140-2"><a href="depuração-e-teste-de-algorimos.html#cb140-2" tabindex="-1"></a>resultado <span class="op">=</span> idade <span class="op">+</span> idade</span>
+<span id="cb140-3"><a href="depuração-e-teste-de-algorimos.html#cb140-3" tabindex="-1"></a><span class="bu">print</span>(resultado)</span></code></pre></div>
+<p>Saída</p>
+<pre class="batch"><code>2525</code></pre>
+<hr />
+</div>
+<div id="erros-de-sintaxe" class="section level3 hasAnchor" number="8.2.2">
+<h3><span class="header-section-number">8.2.2</span> Erros de sintaxe<a href="depuração-e-teste-de-algorimos.html#erros-de-sintaxe" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Um erro de sintaxe ocorre quando o código não segue as regras gramaticais da linguagem de programação. O interpretador (ou compilador) não consegue entender o código. O código não chega a executar.</p>
+<div class="sourceCode" id="cb142"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb142-1"><a href="depuração-e-teste-de-algorimos.html#cb142-1" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">10</span></span>
+<span id="cb142-2"><a href="depuração-e-teste-de-algorimos.html#cb142-2" tabindex="-1"></a>    <span class="bu">print</span>(x)</span></code></pre></div>
+<p>Saída</p>
+<pre class="batch"><code>erro</code></pre>
+<p>O que falta neste código ?</p>
+<hr />
+</div>
+<div id="erros-lógicos" class="section level3 hasAnchor" number="8.2.3">
+<h3><span class="header-section-number">8.2.3</span> Erros lógicos<a href="depuração-e-teste-de-algorimos.html#erros-l%C3%B3gicos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Um erro lógico acontece quando o código está sintaticamente correto e faz sentido para o computador, mas a lógica usada para resolver o problema está errada.</p>
+<div class="sourceCode" id="cb144"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb144-1"><a href="depuração-e-teste-de-algorimos.html#cb144-1" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb144-2"><a href="depuração-e-teste-de-algorimos.html#cb144-2" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb144-3"><a href="depuração-e-teste-de-algorimos.html#cb144-3" tabindex="-1"></a>media <span class="op">=</span> x <span class="op">+</span> y <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb144-4"><a href="depuração-e-teste-de-algorimos.html#cb144-4" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;A média entre 10 e 5 é : , &quot;</span>media)</span></code></pre></div>
+<p>Saída</p>
+<pre class="batch"><code>12,5</code></pre>
+<hr />
+</div>
+</div>
+<div id="ferramentas-de-depuração" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Ferramentas de Depuração<a href="depuração-e-teste-de-algorimos.html#ferramentas-de-depura%C3%A7%C3%A3o" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ambientes-de-desenvolvimento-integrados-ides" class="section level3 hasAnchor" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Ambientes de desenvolvimento integrados (IDEs)<a href="depuração-e-teste-de-algorimos.html#ambientes-de-desenvolvimento-integrados-ides" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Uma IDE (Integrated Development Environment — <strong>Ambiente de Desenvolvimento Integrado</strong>) é um software que reúne, em um único lugar, todas as ferramentas necessárias para desenvolver programas. Em vez de usar vários programas separados (editor, compilador, depurador), a IDE integra tudo em uma única interface.</p>
+</div>
+<div id="antes-sem-utilizar-ides" class="section level3 hasAnchor" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> Antes: SEM UTILIZAR IDEs<a href="depuração-e-teste-de-algorimos.html#antes-sem-utilizar-ides" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table style="width:99%;">
+<colgroup>
+<col width="32%" />
+<col width="25%" />
+<col width="41%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Editor de código</td>
+<td>Notepad++</td>
+<td><img src="08-aula08/04-NotePad++.jpg" /></td>
+</tr>
+<tr class="even">
+<td>Executor/Compilador</td>
+<td><strong>Python.exe ( “MS-DOS”)</strong></td>
+<td><img src="08-aula08/05-IDLE.jpg" /></td>
+</tr>
+<tr class="odd">
+<td>Depurador (Debugger)</td>
+<td><strong>PYTHON TUTOR (WEB)</strong></td>
+<td><img src="08-aula08/05-python-tutor.jpg" /></td>
+</tr>
+<tr class="even">
+<td>Gerenciador de projeto (Arquivos)</td>
+<td><strong>windows explorer</strong></td>
+<td><img src="08-aula08/07-GerenciadorDeArquivos.jpg" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="agora-utilizando-ides" class="section level3 hasAnchor" number="8.3.3">
+<h3><span class="header-section-number">8.3.3</span> Agora: UTILIZANDO IDEs<a href="depuração-e-teste-de-algorimos.html#agora-utilizando-ides" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="37%" />
+<col width="62%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Editor de Arquivos;</p></li>
+<li><p>Compilador/Executor;</p></li>
+<li><p>Depurador;</p></li>
+<li><p>Gestor de Projetos;</p></li>
+</ul></td>
+<td><img src="08-aula08/01-vscode.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<div id="exemplos-de-ides-para-linguagem-python" class="section level4 hasAnchor" number="8.3.3.1">
+<h4><span class="header-section-number">8.3.3.1</span> Exemplos de IDEs para linguagem Python:<a href="depuração-e-teste-de-algorimos.html#exemplos-de-ides-para-linguagem-python" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table>
+<colgroup>
+<col width="68%" />
+<col width="31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><a href="https://code.visualstudio.com/download">Microsoft VSCODE</a></td>
+<td><img src="08-aula08/01-vscode.jpg" /></td>
+</tr>
+<tr class="even">
+<td><a href="https://visualstudio.microsoft.com/pt-br/vs/">Microsoft Visual Studio 2022</a></td>
+<td><img src="08-aula08/02-VisualStudio.jpg" /></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.spyder-ide.org/">Spyder</a></td>
+<td><img src="08-aula08/03-Spyder.jpg" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="depurando-na-i.d.e." class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Depurando na I.D.E.<a href="depuração-e-teste-de-algorimos.html#depurando-na-i.d.e." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><strong>Breakpoints (Pontos de Parada)</strong></li>
+</ul>
+<pre><code>Interrompem a execução do código em uma linha específica para examinar o estado das variáveis.</code></pre>
+<ul>
+<li><strong>Step-By-Step (Passo-a-Passo)</strong></li>
+</ul>
+<pre><code>Executar linha por linha (Step Into, Step Over, Step Out) para rastrear o fluxo lógico.</code></pre>
+<p>Exemplo no Microsoft VSCode</p>
+<p>Você deseja monitorar a execução do seguinte código passo-a-passo:</p>
+<div class="sourceCode" id="cb148"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb148-1"><a href="depuração-e-teste-de-algorimos.html#cb148-1" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 1&quot;</span>)</span>
+<span id="cb148-2"><a href="depuração-e-teste-de-algorimos.html#cb148-2" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 2&quot;</span>)</span>
+<span id="cb148-3"><a href="depuração-e-teste-de-algorimos.html#cb148-3" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 3&quot;</span>)</span>
+<span id="cb148-4"><a href="depuração-e-teste-de-algorimos.html#cb148-4" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 4&quot;</span>)</span>
+<span id="cb148-5"><a href="depuração-e-teste-de-algorimos.html#cb148-5" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 5&quot;</span>)</span>
+<span id="cb148-6"><a href="depuração-e-teste-de-algorimos.html#cb148-6" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 6&quot;</span>)</span>
+<span id="cb148-7"><a href="depuração-e-teste-de-algorimos.html#cb148-7" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 7&quot;</span>)</span>
+<span id="cb148-8"><a href="depuração-e-teste-de-algorimos.html#cb148-8" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 8&quot;</span>)</span>
+<span id="cb148-9"><a href="depuração-e-teste-de-algorimos.html#cb148-9" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 9&quot;</span>)</span>
+<span id="cb148-10"><a href="depuração-e-teste-de-algorimos.html#cb148-10" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;linha 10&quot;</span>)</span>
+<span id="cb148-11"><a href="depuração-e-teste-de-algorimos.html#cb148-11" tabindex="-1"></a></span>
+<span id="cb148-12"><a href="depuração-e-teste-de-algorimos.html#cb148-12" tabindex="-1"></a>variavel1 <span class="op">=</span> <span class="dv">3</span><span class="op">;</span></span>
+<span id="cb148-13"><a href="depuração-e-teste-de-algorimos.html#cb148-13" tabindex="-1"></a>variavel2 <span class="op">=</span> <span class="dv">11</span><span class="op">;</span></span></code></pre></div>
+<div id="executando-o-código-normalmente-sem-depurar-no-vscode" class="section level3 hasAnchor" number="8.4.1">
+<h3><span class="header-section-number">8.4.1</span> Executando o código normalmente (sem depurar) no VSCode:<a href="depuração-e-teste-de-algorimos.html#executando-o-c%C3%B3digo-normalmente-sem-depurar-no-vscode" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="08-aula08/01-Depura%C3%A7%C3%A3o-01-Execu%C3%A7%C3%A3o-Normal.jpg" /></p>
+<p>Todas as linhas saem no terminal</p>
+<p><img src="08-aula08/02-Depura%C3%A7%C3%A3o-01-Execu%C3%A7%C3%A3o-Normal-sa%C3%ADda.jpg" /></p>
+</div>
+<div id="executando-o-código-depurando-no-vscode-debugging" class="section level3 hasAnchor" number="8.4.2">
+<h3><span class="header-section-number">8.4.2</span> Executando o código depurando no VSCode (DEBUGGING):<a href="depuração-e-teste-de-algorimos.html#executando-o-c%C3%B3digo-depurando-no-vscode-debugging" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>passo - Colocando um BreakPoint</li>
+</ol>
+<p><img src="08-aula08/03-Depura%C3%A7%C3%A3o-01-Break-Point.jpg" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>passo - Inicializando a depuração</li>
+</ol>
+<p><img src="08-aula08/04-Iniciando-modo-Depura%C3%A7%C3%A3o.jpg" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>passo - Selecionando o depurador padrão do Python</li>
+</ol>
+<p><img src="08-aula08/05-Depura%C3%A7%C3%A3o-Escolhendo-Depurador-da-Ferramenta.jpg" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>passo - Avisando que você vai depurar um arquivo comum</li>
+</ol>
+<p><img src="08-aula08/06-Depura%C3%A7%C3%A3o-Escolhendo-Depurador-da-Ferramenta.jpg" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>passo - Fazendo e execução passo-a-passo (Step By Step) - Tecla de atalho F10</li>
+</ol>
+<p><img src="08-aula08/07-Depura%C3%A7%C3%A3o-Executa_Sem_Entrar_no_Codigo.jpg" /></p>
+<ol start="6" style="list-style-type: decimal">
+<li>passo - Fazendo e execução passo-a-passo (Step By Step) - Tecla de atalho F10</li>
+</ol>
+<p><img src="08-aula08/08-Depura%C3%A7%C3%A3o-Executa_Sem_Entrar_no_Codigo.jpg" /></p>
+<ol start="7" style="list-style-type: decimal">
+<li>passo - Cada vez que você pressionar F11, vai a próxima linha. Caso exista uma função, você não irá entrar dentro dela.</li>
+</ol>
+<p><img src="08-aula08/09-Depura%C3%A7%C3%A3o-Executa-achei-variavel.jpg" /></p>
+<ol start="8" style="list-style-type: decimal">
+<li>passo - Ao encontrar uma variável, podemos inspecionar seu conteúdo. Passe o mouse acima do nome da variável e com o botão do mouse, selecione a opção “add Watch”.</li>
+</ol>
+<p><img src="08-aula08/10-Depura%C3%A7%C3%A3o-Executa-achei-variavel.jpg" /></p>
+<p>A Variável selecionada, passa a aparecer na área da visualização (quadrinho watch).</p>
+<p><img src="08-aula08/11-Depura%C3%A7%C3%A3o-Executa-achei-variavel.jpg" /></p>
+<p>Para toda variável de interesse, você pode adicioná-la da tela de exibição repetindo o processo.</p>
+<p><img src="08-aula08/12-Depura%C3%A7%C3%A3o-Executa-achei-variavel.jpg" /></p>
+<p>Se precisar sair do programa, basta pressionar SHIFT+F5;</p>
+<p><img src="08-aula08/13-Depura%C3%A7%C3%A3o-Executa-finalizacao.jpg" /></p>
+</div>
+</div>
+<div id="referências" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> REFERÊNCIAS:<a href="depuração-e-teste-de-algorimos.html#refer%C3%AAncias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Quiroz-Vázquez, Camilo - IBM. Debugging: o que é e como funciona. [S.l.: s.n.], [s.d.]. Disponível em: <a href="https://www.ibm.com/br-pt/think/topics/debugging" class="uri">https://www.ibm.com/br-pt/think/topics/debugging</a>. Acesso em: 22 abr. 2026. FURTADO, A. L. Python: Programação para Leigos. Rio de Janeiro: Alta Books, 2021. Capítulo 10</p>
 
-<div id="exercícios-de-depuração-e-teste-de-algorimos" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Exercícios de Depuração e Teste de Algorimos<a href="depuração-e-teste-de-algorimos.html#exerc%C3%ADcios-de-depura%C3%A7%C3%A3o-e-teste-de-algorimos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="exercícios-de-depuração-e-teste-de-algorimos" class="section level2 hasAnchor" number="8.6">
+<h2><span class="header-section-number">8.6</span> Exercícios de Depuração e Teste de Algorimos<a href="depuração-e-teste-de-algorimos.html#exerc%C3%ADcios-de-depura%C3%A7%C3%A3o-e-teste-de-algorimos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="exemplo-1--" class="section level3 hasAnchor" number="8.6.1">
+<h3><span class="header-section-number">8.6.1</span> Exemplo 1 -<a href="depuração-e-teste-de-algorimos.html#exemplo-1--" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Depure em uma tabela o programa a seguir:</p>
+<ol style="list-style-type: lower-alpha">
+<li>mostre a evolução das variáveis de posição ou contagem (total_de_elementos e posicao_atual);</li>
+<li>mostre a saída de do programa em em toda evolução do laço FOR</li>
+</ol>
+<div class="sourceCode" id="cb149"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb149-1"><a href="depuração-e-teste-de-algorimos.html#cb149-1" tabindex="-1"></a>dias_semana <span class="op">=</span> [ <span class="st">&quot;Segunda-feira&quot;</span>, <span class="st">&quot;Terça-feira&quot;</span>, <span class="st">&quot;Quarta-feira&quot;</span>, <span class="st">&quot;Quinta-feira&quot;</span>, <span class="st">&quot;Sexta-feira&quot;</span>, <span class="st">&quot;Sábado&quot;</span>, <span class="st">&quot;Domingo&quot;</span> ]</span>
+<span id="cb149-2"><a href="depuração-e-teste-de-algorimos.html#cb149-2" tabindex="-1"></a></span>
+<span id="cb149-3"><a href="depuração-e-teste-de-algorimos.html#cb149-3" tabindex="-1"></a>total_de_elementos <span class="op">=</span> <span class="bu">len</span>(dias_semana)</span>
+<span id="cb149-4"><a href="depuração-e-teste-de-algorimos.html#cb149-4" tabindex="-1"></a></span>
+<span id="cb149-5"><a href="depuração-e-teste-de-algorimos.html#cb149-5" tabindex="-1"></a>posicao_atual <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb149-6"><a href="depuração-e-teste-de-algorimos.html#cb149-6" tabindex="-1"></a></span>
+<span id="cb149-7"><a href="depuração-e-teste-de-algorimos.html#cb149-7" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Dias da semana:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb149-8"><a href="depuração-e-teste-de-algorimos.html#cb149-8" tabindex="-1"></a></span>
+<span id="cb149-9"><a href="depuração-e-teste-de-algorimos.html#cb149-9" tabindex="-1"></a><span class="cf">for</span> ( posicao_atual ) <span class="kw">in</span> <span class="bu">range</span>( total_de_elementos ):</span>
+<span id="cb149-10"><a href="depuração-e-teste-de-algorimos.html#cb149-10" tabindex="-1"></a>    <span class="bu">print</span>( dias_semana[posicao_atual] )</span></code></pre></div>
+<p>Resolução</p>
+<pre class="text"><code>+-----------+----------------------+------------------+------------------+
+| Iteração  | total_de_elementos   | posicao_atual    | Valor Acessado   |
++-----------+----------------------+------------------+------------------+
+| Inicial   | 7                    | 0                | -                |
++-----------+----------------------+------------------+------------------+
+| 1         | 7                    | 0                | Segunda-feira    |
+| 2         | 7                    | 1                | Terça-feira      |
+| 3         | 7                    | 2                | Quarta-feira     |
+| 4         | 7                    | 3                | Quinta-feira     |
+| 5         | 7                    | 4                | Sexta-feira      |
+| 6         | 7                    | 5                | Sábado           |
+| 7         | 7                    | 6                | Domingo          |
++-----------+----------------------+------------------+------------------+</code></pre>
+</div>
+<div id="exemplo-2--" class="section level3 hasAnchor" number="8.6.2">
+<h3><span class="header-section-number">8.6.2</span> Exemplo 2 -<a href="depuração-e-teste-de-algorimos.html#exemplo-2--" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Implemente um programa em Python que:
+- Crie uma matriz bidimensional (lista de listas) com 3 linhas e 4 colunas, contendo valores inteiros sequenciais (por exemplo: de 1 a 12).
+- Utilize estruturas de repetição (for) para percorrer todos os elementos da matriz.
+- Exiba os valores da matriz organizados em formato tabular (3x4), respeitando linhas e colunas.</p>
+<div class="sourceCode" id="cb151"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb151-1"><a href="depuração-e-teste-de-algorimos.html#cb151-1" tabindex="-1"></a>matriz <span class="op">=</span> [</span>
+<span id="cb151-2"><a href="depuração-e-teste-de-algorimos.html#cb151-2" tabindex="-1"></a>    [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>],</span>
+<span id="cb151-3"><a href="depuração-e-teste-de-algorimos.html#cb151-3" tabindex="-1"></a>    [<span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>],</span>
+<span id="cb151-4"><a href="depuração-e-teste-de-algorimos.html#cb151-4" tabindex="-1"></a>    [<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>]</span>
+<span id="cb151-5"><a href="depuração-e-teste-de-algorimos.html#cb151-5" tabindex="-1"></a>]</span>
+<span id="cb151-6"><a href="depuração-e-teste-de-algorimos.html#cb151-6" tabindex="-1"></a></span>
+<span id="cb151-7"><a href="depuração-e-teste-de-algorimos.html#cb151-7" tabindex="-1"></a>total_de_linhas  <span class="op">=</span> <span class="bu">len</span>(matriz)</span>
+<span id="cb151-8"><a href="depuração-e-teste-de-algorimos.html#cb151-8" tabindex="-1"></a>total_de_colunas <span class="op">=</span> <span class="bu">len</span>(matriz[<span class="dv">0</span>])</span>
+<span id="cb151-9"><a href="depuração-e-teste-de-algorimos.html#cb151-9" tabindex="-1"></a></span>
+<span id="cb151-10"><a href="depuração-e-teste-de-algorimos.html#cb151-10" tabindex="-1"></a>linha_atual  <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb151-11"><a href="depuração-e-teste-de-algorimos.html#cb151-11" tabindex="-1"></a>coluna_atual <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb151-12"><a href="depuração-e-teste-de-algorimos.html#cb151-12" tabindex="-1"></a></span>
+<span id="cb151-13"><a href="depuração-e-teste-de-algorimos.html#cb151-13" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Matriz 3x4:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb151-14"><a href="depuração-e-teste-de-algorimos.html#cb151-14" tabindex="-1"></a></span>
+<span id="cb151-15"><a href="depuração-e-teste-de-algorimos.html#cb151-15" tabindex="-1"></a><span class="cf">for</span> linha_atual <span class="kw">in</span> <span class="bu">range</span>(total_de_linhas):   </span>
+<span id="cb151-16"><a href="depuração-e-teste-de-algorimos.html#cb151-16" tabindex="-1"></a>    <span class="cf">for</span> coluna_atual <span class="kw">in</span> <span class="bu">range</span>(total_de_colunas):</span>
+<span id="cb151-17"><a href="depuração-e-teste-de-algorimos.html#cb151-17" tabindex="-1"></a>        <span class="bu">print</span>(matriz[linha_atual][coluna_atual], end<span class="op">=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>)</span>
+<span id="cb151-18"><a href="depuração-e-teste-de-algorimos.html#cb151-18" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<p>Depuração manual</p>
+<pre class="text"><code>+----------+--------+---------+-------+--------+----------------+
+| Iteração | total  | total   | linha | coluna | Valor Impresso |
+|          | linhas | colunas | atual | atual  |                |
++----------+--------+---------+-------+--------+----------------+
+| Inicio   | 3      | 4       | 0     | 0      | --             |
++----------+--------+---------+-------+--------+----------------+
+| 1        | 3      | 4       | 0     | 0      | 1              |
++----------+--------+---------+-------+--------+----------------+
+| 2        | 3      | 4       | 0     | 1      | 2              |
++----------+--------+---------+-------+--------+----------------+
+| 3        | 3      | 4       | 0     | 2      | 3              |
++----------+--------+---------+-------+--------+----------------+
+| 4        | 3      | 4       | 0     | 3      | 4              |
++----------+--------+---------+-------+--------+----------------+
+| 5        | 3      | 4       | 1     | 0      | 5              |
++----------+--------+---------+-------+--------+----------------+
+| 6        | 3      | 4       | 1     | 1      | 6              |
++----------+--------+---------+-------+--------+----------------+
+| 7        | 3      | 4       | 1     | 2      | 7              |
++----------+--------+---------+-------+--------+----------------+
+| 8        | 3      | 4       | 1     | 3      | 8              |
++----------+--------+---------+-------+--------+----------------+
+| 9        | 3      | 4       | 2     | 0      | 9              |
++----------+--------+---------+-------+--------+----------------+
+| 10       | 3      | 4       | 2     | 1      | 10             |
++----------+--------+---------+-------+--------+----------------+
+| 11       | 3      | 4       | 2     | 2      | 11             |
++----------+--------+---------+-------+--------+----------------+
+| 12       | 3      | 4       | 2     | 3      | 12             |
++----------+--------+---------+-------+--------+----------------+</code></pre>
+<p>Exercício 1 -</p>
 
+</div>
 </div>
 </div>
             </section>

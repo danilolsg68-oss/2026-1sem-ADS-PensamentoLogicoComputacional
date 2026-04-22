@@ -1,1 +1,114 @@
 ## Exercícios de Depuração e Teste de Algorimos
+
+
+### Exemplo 1 -
+
+Depure em uma tabela o programa a seguir:
+
+a) mostre a evolução das variáveis de posição ou contagem (total_de_elementos e posicao_atual);
+b) mostre a saída de do programa em em toda evolução do laço FOR
+
+```python
+dias_semana = [ "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo" ]
+
+total_de_elementos = len(dias_semana)
+
+posicao_atual = 0
+
+print("Dias da semana:\n")
+
+for ( posicao_atual ) in range( total_de_elementos ):
+    print( dias_semana[posicao_atual] )
+
+```
+
+Depuração manual
+
+```text
++-----------+----------------------+------------------+------------------+
+| Iteração  | total_de_elementos   | posicao_atual    | Valor Acessado   |
++-----------+----------------------+------------------+------------------+
+| Inicial   | 7                    | 0                | -                |
++-----------+----------------------+------------------+------------------+
+| 1         | 7                    | 0                | Segunda-feira    |
+| 2         | 7                    | 1                | Terça-feira      |
+| 3         | 7                    | 2                | Quarta-feira     |
+| 4         | 7                    | 3                | Quinta-feira     |
+| 5         | 7                    | 4                | Sexta-feira      |
+| 6         | 7                    | 5                | Sábado           |
+| 7         | 7                    | 6                | Domingo          |
++-----------+----------------------+------------------+------------------+
+```
+
+
+
+
+
+
+### Exemplo 2 -
+Implemente um programa em Python que:
+- Crie uma matriz bidimensional (lista de listas) com 3 linhas e 4 colunas, contendo valores inteiros sequenciais (por exemplo: de 1 a 12).
+- Utilize estruturas de repetição (for) para percorrer todos os elementos da matriz.
+- Exiba os valores da matriz organizados em formato tabular (3x4), respeitando linhas e colunas.
+
+```python
+matriz = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+]
+
+total_de_linhas  = len(matriz)
+total_de_colunas = len(matriz[0])
+
+linha_atual  = 0
+coluna_atual = 0
+
+print("Matriz 3x4:\n")
+
+for linha_atual in range(total_de_linhas):   
+    for coluna_atual in range(total_de_colunas):
+        print(matriz[linha_atual][coluna_atual], end="\t")
+    print("\n")
+```
+
+Depuração manual
+
+```text
++----------+--------+---------+-------+--------+----------------+
+| Iteração | total  | total   | linha | coluna | Valor Impresso |
+|          | linhas | colunas | atual | atual  |                |
++----------+--------+---------+-------+--------+----------------+
+| Inicio   | 3      | 4       | 0     | 0      | --             |
++----------+--------+---------+-------+--------+----------------+
+| 1        | 3      | 4       | 0     | 0      | 1              |
++----------+--------+---------+-------+--------+----------------+
+| 2        | 3      | 4       | 0     | 1      | 2              |
++----------+--------+---------+-------+--------+----------------+
+| 3        | 3      | 4       | 0     | 2      | 3              |
++----------+--------+---------+-------+--------+----------------+
+| 4        | 3      | 4       | 0     | 3      | 4              |
++----------+--------+---------+-------+--------+----------------+
+| 5        | 3      | 4       | 1     | 0      | 5              |
++----------+--------+---------+-------+--------+----------------+
+| 6        | 3      | 4       | 1     | 1      | 6              |
++----------+--------+---------+-------+--------+----------------+
+| 7        | 3      | 4       | 1     | 2      | 7              |
++----------+--------+---------+-------+--------+----------------+
+| 8        | 3      | 4       | 1     | 3      | 8              |
++----------+--------+---------+-------+--------+----------------+
+| 9        | 3      | 4       | 2     | 0      | 9              |
++----------+--------+---------+-------+--------+----------------+
+| 10       | 3      | 4       | 2     | 1      | 10             |
++----------+--------+---------+-------+--------+----------------+
+| 11       | 3      | 4       | 2     | 2      | 11             |
++----------+--------+---------+-------+--------+----------------+
+| 12       | 3      | 4       | 2     | 3      | 12             |
++----------+--------+---------+-------+--------+----------------+
+```
+
+
+Exercício 1 -
+
+
+

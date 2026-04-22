@@ -164,7 +164,7 @@ usuarios = [
     ["Carlos", 30]
 ]
 
-with open("usuarios.txt", "w") as arq:
+with open("exemplo3-usuarios.csv", "w") as arq:
     for nome, idade in usuarios:
         arq.write(f"{nome},{idade}\n")
 ```
@@ -200,7 +200,7 @@ variavel_dicionario = [
     }
 ]
 
-with open("exemplo2.csv", "w", newline="", encoding="utf-8") as variavel_arquivo:
+with open("exemplo4.csv", "w", newline="", encoding="utf-8") as variavel_arquivo:
     formatador_csv = csv.writer(variavel_arquivo)
     
     # escrevendo a primeira linha: cabeçalho (colunas)
@@ -250,7 +250,7 @@ variavel_dicionario = [
     }
 ]
 
-with open("exemplo2.json", "w", encoding="utf-8") as variavel_arquivo:
+with open("exemplo5.json", "w", encoding="utf-8") as variavel_arquivo:
     json.dump(variavel_dicionario, variavel_arquivo, ensure_ascii=False, indent=4)
 ```
 
@@ -347,7 +347,7 @@ print(variavel_dicionario_lido)
 ```python
 usuarios_lidos = []
 
-with open("usuarios.csv", "r", encoding="utf-8") as variavel_arquivo:
+with open("exemplo3-usuarios.csv", "r", encoding="utf-8") as variavel_arquivo:
     for linha in variavel_arquivo:
         nome, idade = linha.strip().split(",")
         if idade.isdigit():
