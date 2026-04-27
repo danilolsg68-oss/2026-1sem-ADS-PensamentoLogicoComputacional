@@ -1,1 +1,63 @@
 # Programação Orientada a Objetos - Parte 2
+## Relacionamentos, Organização e Boas Práticas**
+
+**Objetivo:** Modelar interações entre classes e organizar a arquitetura do software.
+
+## **Conceitos Relacionais**
+*   **Herança:** Permite que uma subclasse herde atributos e métodos de uma superclasse, estabelecendo uma relação de **"é um"**.
+*   **Associação:** Ocorre quando uma classe "possui" ou "usa" outra para completar sua representatividade, sem ser um subtipo dela.
+*   **Interface:** Define um **contrato** de métodos que a classe é obrigada a implementar, garantindo padronização.
+
+**Exemplo em Python (Herança e Associação):**
+```python
+class Pessoa: # Classe Abstrata (Conceitual)
+    def __init__(self, nome):
+        self.nome = nome
+
+class Medico(Pessoa): # Herança: Médico "é uma" Pessoa
+    def __init__(self, nome, crm, endereco):
+        super().__init__(nome)
+        self.crm = crm
+        self.endereco = endereco # Associação: Médico "tem um" Endereço
+
+class Endereco:
+    def __init__(self, rua):
+        self.rua = rua
+```
+
+## **Conceitos Organizacionais**
+*   **Pacotes (Módulos):** Organização física ou lógica para separar classes com responsabilidades distintas. Em Python, são os arquivos `.py` e pastas com `__init__.py`.
+*   **Visibilidades (Modificadores de Acesso):** Determinam quem pode acessar membros da classe.
+    *   **Privada (`private`):** Acesso apenas dentro da própria classe. (Em Python, usa-se `__` antes do nome).
+    *   **Pública (`public`):** Acesso livre de qualquer lugar.
+
+## **Polimorfismo e Sobrescrita**
+*   **Polimorfismo:** Capacidade de um mesmo método se comportar de forma diferente dependendo do objeto que o executa.
+*   **Sobrescrita:** Redefinir um método herdado da superclasse para adaptar o comportamento na subclasse.
+
+**Exemplo em Python:**
+```python
+class Procedimento:
+    def calcular_total(self):
+        return 0
+
+class Faringoplastia(Procedimento):
+    def calcular_total(self): # Sobrescrita
+        return 1500.00        # Polimorfismo na prática
+```
+
+---
+
+## **Referência ABNT da Fonte**
+
+CARVALHO, Thiago Leite e. **Orientação a Objetos**: aprenda seus conceitos e suas aplicabilidades de forma efetiva. 1. ed. [S.l.]: Casa do Código, [ano não informado].
+
+
+
+```{r aula-10-orirntecao-objetos-parte2-aula-html, eval=FALSE, include=FALSE}
+rmarkdown::render("10-2026-05-06_Programacao_OO-parte2.Rmd", output_dir="docs", output_file ="temporario.html" , output_format = "html_document") ; utils::browseURL("docs/temporario.html")
+```
+
+```{r aula-10-orirntecao-objetos-parte2-aula-word, eval=FALSE, include=FALSE}
+rmarkdown::render("10-2026-05-06_Programacao_OO-parte2.Rmd", output_dir="docs", output_file ="temporario.docx" , output_format = "word_document") ; utils::browseURL("docs/temporario.docx")
+```

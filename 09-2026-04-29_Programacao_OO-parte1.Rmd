@@ -1,1 +1,150 @@
 # Programação Orientada a Objetos - Parte 1
+
+
+
+## **Breve História e Criadores**
+A Orientação a Objetos (OO) surgiu na década de 1960, fundamentada no conceito de **Simulação** (simular eventos do dia a dia em sistemas digitais). 
+*   **Os Criadores:** Em 1962, os pesquisadores noruegueses **Kristen Nygaard e Ole-Johan Dahl** aceitaram o desafio de criar uma linguagem de simulação de eventos discretos, batizada de **Simula 67**, considerada a primeira linguagem OO de renome.
+*   **Popularização:** Na década de 70, **Alan Kay** criou o **Smalltalk**, que efetivamente tornou a OO conhecida, introduzindo interfaces gráficas e o conceito de que "tudo é objeto". A popularização massiva ocorreu nos anos 90 com o Java.
+
+
+```{plantuml linha_do_tempo-09-09, plantuml.path="images"}
+@startuml
+title Infográfico — Linha do Tempo da Programação Orientada a Objetos
+
+skinparam backgroundColor #FAFAFA
+skinparam shadowing true
+skinparam roundcorner 20
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+
+skinparam rectangle {
+  BackgroundColor #EAF3FF
+  BorderColor #2B5C9E
+  FontColor #111111
+}
+
+
+
+skinparam note {
+  BackgroundColor #FFF4CC
+  BorderColor #C9A227
+  FontColor #111111
+}
+
+top to bottom direction
+
+rectangle "1967\nSimula 67" as simula
+rectangle "1972\nSmalltalk" as smalltalk
+rectangle "1980\nC++" as cpp
+rectangle "1984\nEiffel" as eiffel
+rectangle "1995\nJava" as java
+
+simula --> smalltalk
+smalltalk --> cpp
+cpp --> eiffel
+eiffel --> java
+
+note right of simula
+Criadores:
+Ole-Johan Dahl
+Kristen Nygaard
+
+Contribuições:
+• Primeira linguagem OO reconhecida
+• Classes e objetos
+• Herança
+• Simulação de sistemas
+end note
+
+note right of smalltalk
+Criador:
+Alan Kay
+(Adele Goldberg, Dan Ingalls)
+
+Contribuições:
+• Tudo é objeto
+• Comunicação por mensagens
+• Interface gráfica (GUI)
+end note
+
+note right of cpp
+Criador:
+Bjarne Stroustrup
+
+Contribuições:
+• Extensão OO do C
+• Herança múltipla
+• Polimorfismo
+end note
+
+note right of eiffel
+Criador:
+Bertrand Meyer
+
+Contribuições:
+• Design by Contract
+• Qualidade e confiabilidade
+end note
+
+note right of java
+Criador:
+James Gosling
+
+Contribuições:
+• Portabilidade (JVM)
+• Uso corporativo e web
+• Garbage Collector
+end note
+
+@enduml
+```
+
+
+## **Paradigma Procedural (Estruturado) vs. Orientado a Objetos**
+*   **Procedural:** Foca no **"como fazer"**. Baseia-se em três estruturas: sequência, decisão e iteração. O problema principal é o **Gap Semântico**: a dificuldade de representar a realidade de forma direta, pois dados e operações ficam desassociados no código.
+*   **Orientação a Objetos:** Foca no **"o que deve ser feito"**. Visa diminuir o Gap Semântico, criando unidades de código mais próximas da forma como pensamos e agimos.
+*   **Vantagens da OO:** Melhor expressividade, maior reúso de código, facilidade de manutenção e criação de sistemas mais complexos com menor acoplamento.
+
+```python
+
+```
+
+
+## **Conceitos Estruturais (Exemplos em Python)**
+*   **Classe:** É o "molde" ou abstração base a partir da qual os objetos são criados.
+*   **Atributo:** Define a estrutura de dados e as características da classe.
+*   **Método:** Define as ações ou comportamentos que a classe oferece.
+*   **Objeto:** É a instância (realização) de uma classe.
+
+**Exemplo em Python:**
+```python
+class Personagem:
+    def __init__(self, nome, altura): # Construtor (método especial)
+        self.nome = nome              # Atributo
+        self.altura = altura
+
+    def pular(self):                  # Método
+        print(f"{self.nome} pulou!")
+
+# Instanciação de Objetos
+mario = Personagem("Mario", 1.60)
+mario.pular() # Mensagem enviada ao objeto
+```
+
+
+
+## **Referência ABNT da Fonte**
+
+CARVALHO, Thiago Leite e. **Orientação a Objetos**: aprenda seus conceitos e suas aplicabilidades de forma efetiva. 1. ed. [S.l.]: Casa do Código, [ano não informado].
+
+
+
+```{r aula-09-orirntecao-objetos-parte1-aula-html, eval=FALSE, include=FALSE}
+rmarkdown::render("09-2026-04-29_Programacao_OO-parte1.Rmd", output_dir="docs", output_file ="temporario.html" , output_format = "html_document") ; utils::browseURL("docs/temporario.html")
+```
+
+```{r aula-09-orirntecao-objetos-parte1-aula-word, eval=FALSE, include=FALSE}
+rmarkdown::render("09-2026-04-29_Programacao_OO-parte1.Rmd", output_dir="docs", output_file ="temporario.docx" , output_format = "word_document") ; utils::browseURL("docs/temporario.docx")
+```
+
