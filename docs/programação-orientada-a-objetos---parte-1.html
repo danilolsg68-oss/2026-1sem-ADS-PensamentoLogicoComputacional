@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Aula 9 Programação Orientada a Objetos - Parte 1 | ADS - Pensamento Lógico Computacional - Ênfase em Python - 2026 - Anotações de aula</title>
   <meta name="description" content="Este livreto reúne anotações, reflexões e conteúdos desenvolvidos ao longo das aulas da disciplina Pensamento Computacional - Ênfase em Python, ministrada pelo Professor Miguél Suares. Elaborado com base em experiências práticas, referências acadêmicas e diretrizes atualizadas sobre o tema, o material busca fornecer uma visão crítica e aplicada sobre análise de dados nas organizações contemporâneas." />
-  <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46.2 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Aula 9 Programação Orientada a Objetos - Parte 1 | ADS - Pensamento Lógico Computacional - Ênfase em Python - 2026 - Anotações de aula" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Professor Miguél Suares" />
 
 
-<meta name="date" content="2026-04-27" />
+<meta name="date" content="2026-04-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,8 +55,9 @@
 
 
 <style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -66,7 +67,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -337,19 +338,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="9" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html"><i class="fa fa-check"></i><b>9</b> Programação Orientada a Objetos - Parte 1</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#breve-hist%C3%B3ria-e-criadores"><i class="fa fa-check"></i><b>9.1</b> <strong>1. Breve História e Criadores</strong></a></li>
-<li class="chapter" data-level="9.2" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#paradigma-procedural-estruturado-vs.-orientado-a-objetos"><i class="fa fa-check"></i><b>9.2</b> <strong>2. Paradigma Procedural (Estruturado) vs. Orientado a Objetos</strong></a></li>
-<li class="chapter" data-level="9.3" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#conceitos-estruturais-exemplos-em-python"><i class="fa fa-check"></i><b>9.3</b> <strong>3. Conceitos Estruturais (Exemplos em Python)</strong></a></li>
-<li class="chapter" data-level="9.4" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#refer%C3%AAncia-abnt-da-fonte"><i class="fa fa-check"></i><b>9.4</b> <strong>Referência ABNT da Fonte</strong></a></li>
+<li class="chapter" data-level="9.1" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#breve-hist%C3%B3ria-e-criadores"><i class="fa fa-check"></i><b>9.1</b> <strong>Breve História e Criadores</strong></a></li>
+<li class="chapter" data-level="9.2" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#paradigma-procedural-estruturado-vs.-orientado-a-objetos"><i class="fa fa-check"></i><b>9.2</b> <strong>Paradigma Procedural (Estruturado) vs. Orientado a Objetos</strong></a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#paradigma-procedural"><i class="fa fa-check"></i><b>9.2.1</b> <strong>Paradigma Procedural:</strong></a></li>
+<li class="chapter" data-level="9.2.2" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#paradigma-orientado-a-objetos"><i class="fa fa-check"></i><b>9.2.2</b> <strong>Paradigma Orientado a Objetos:</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#conceitos-estruturais-exemplos-em-python"><i class="fa fa-check"></i><b>9.3</b> <strong>Conceitos Estruturais (Exemplos em Python)</strong></a></li>
+<li class="chapter" data-level="9.4" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#refer%C3%AAncias-1"><i class="fa fa-check"></i><b>9.4</b> <strong>Referências</strong></a></li>
 <li class="chapter" data-level="9.5" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios---programa%C3%A7%C3%A3o-orientada-a-objetos---parte-1--"><i class="fa fa-check"></i><b>9.5</b> EXERCÍCIOS - Programação Orientada a Objetos - Parte 1 -</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html"><i class="fa fa-check"></i><b>10</b> Programação Orientada a Objetos - Parte 2</a>
 <ul>
 <li class="chapter" data-level="10.1" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#relacionamentos-organiza%C3%A7%C3%A3o-e-boas-pr%C3%A1ticas"><i class="fa fa-check"></i><b>10.1</b> Relacionamentos, Organização e Boas Práticas**</a></li>
-<li class="chapter" data-level="10.2" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#conceitos-relacionais"><i class="fa fa-check"></i><b>10.2</b> <strong>1. Conceitos Relacionais</strong></a></li>
-<li class="chapter" data-level="10.3" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#conceitos-organizacionais"><i class="fa fa-check"></i><b>10.3</b> <strong>2. Conceitos Organizacionais</strong></a></li>
-<li class="chapter" data-level="10.4" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#polimorfismo-e-sobrescrita"><i class="fa fa-check"></i><b>10.4</b> <strong>3. Polimorfismo e Sobrescrita</strong></a></li>
-<li class="chapter" data-level="10.5" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#refer%C3%AAncia-abnt-da-fonte-1"><i class="fa fa-check"></i><b>10.5</b> <strong>Referência ABNT da Fonte</strong></a></li>
+<li class="chapter" data-level="10.2" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#conceitos-relacionais"><i class="fa fa-check"></i><b>10.2</b> <strong>Conceitos Relacionais</strong></a></li>
+<li class="chapter" data-level="10.3" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#conceitos-organizacionais"><i class="fa fa-check"></i><b>10.3</b> <strong>Conceitos Organizacionais</strong></a></li>
+<li class="chapter" data-level="10.4" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#polimorfismo-e-sobrescrita"><i class="fa fa-check"></i><b>10.4</b> <strong>Polimorfismo e Sobrescrita</strong></a></li>
+<li class="chapter" data-level="10.5" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#refer%C3%AAncia-abnt-da-fonte"><i class="fa fa-check"></i><b>10.5</b> <strong>Referência ABNT da Fonte</strong></a></li>
 <li class="chapter" data-level="10.6" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html#exerc%C3%ADcios-de-programa%C3%A7%C3%A3o-orientada-a-objetos---parte-2"><i class="fa fa-check"></i><b>10.6</b> Exercícios de Programação Orientada a Objetos - Parte 2</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="programação-orientada-a-eventos---graphical-user-interfaces.html"><a href="programação-orientada-a-eventos---graphical-user-interfaces.html"><i class="fa fa-check"></i><b>11</b> Programação Orientada a Eventos - Graphical User Interfaces</a>
@@ -379,43 +384,204 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="programação-orientada-a-objetos---parte-1" class="section level1 hasAnchor" number="9">
 <h1><span class="header-section-number">Aula 9</span> Programação Orientada a Objetos - Parte 1<a href="programação-orientada-a-objetos---parte-1.html#programa%C3%A7%C3%A3o-orientada-a-objetos---parte-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="breve-história-e-criadores" class="section level2 hasAnchor" number="9.1">
-<h2><span class="header-section-number">9.1</span> <strong>1. Breve História e Criadores</strong><a href="programação-orientada-a-objetos---parte-1.html#breve-hist%C3%B3ria-e-criadores" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A Orientação a Objetos (OO) surgiu na década de 1960, fundamentada no conceito de <strong>Simulação</strong> (simular eventos do dia a dia em sistemas digitais).
-* <strong>Os Criadores:</strong> Em 1962, os pesquisadores noruegueses <strong>Kristen Nygaard e Ole-Johan Dahl</strong> aceitaram o desafio de criar uma linguagem de simulação de eventos discretos, batizada de <strong>Simula 67</strong>, considerada a primeira linguagem OO de renome.
-* <strong>Popularização:</strong> Na década de 70, <strong>Alan Kay</strong> criou o <strong>Smalltalk</strong>, que efetivamente tornou a OO conhecida, introduzindo interfaces gráficas e o conceito de que “tudo é objeto”. A popularização massiva ocorreu nos anos 90 com o Java.</p>
+<h2><span class="header-section-number">9.1</span> <strong>Breve História e Criadores</strong><a href="programação-orientada-a-objetos---parte-1.html#breve-hist%C3%B3ria-e-criadores" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Orientação a Objetos (OO) surgiu na década de 1960, fundamentada no conceito de <strong>Simulação</strong> (simular eventos do dia a dia em sistemas digitais). * <strong>Os Criadores:</strong> Em 1962, os pesquisadores noruegueses <strong>Kristen Nygaard e Ole-Johan Dahl</strong> aceitaram o desafio de criar uma linguagem de simulação de eventos discretos, batizada de <strong>Simula 67</strong>, considerada a primeira linguagem OO de renome. * <strong>Popularização:</strong> Na década de 70, <strong>Alan Kay</strong> criou o <strong>Smalltalk</strong>, que efetivamente tornou a OO conhecida, introduzindo interfaces gráficas e o conceito de que “tudo é objeto”. A popularização massiva ocorreu nos anos 90 com o Java.</p>
+<table>
+<caption>Da esquerda para direita: Ole-Johan Dahl e Kristen Nygaard - Criadores da primeira Linguagem OO reconhecida: Simula 67</caption>
+<colgroup>
+<col width="30%" />
+<col width="69%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><img src="09-aula09/media/02-Ole-Johan_dahl-colorido.jpg" /></td>
+<td><img src="09-aula09/media/01-kristen_nygaard.jpg" width="222" /></td>
+</tr>
+</tbody>
+</table>
 <p><img src="images/linha_do_tempo-09-09.svg" /><!-- --></p>
 </div>
 <div id="paradigma-procedural-estruturado-vs.-orientado-a-objetos" class="section level2 hasAnchor" number="9.2">
-<h2><span class="header-section-number">9.2</span> <strong>2. Paradigma Procedural (Estruturado) vs. Orientado a Objetos</strong><a href="programação-orientada-a-objetos---parte-1.html#paradigma-procedural-estruturado-vs.-orientado-a-objetos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">9.2</span> <strong>Paradigma Procedural (Estruturado) vs. Orientado a Objetos</strong><a href="programação-orientada-a-objetos---parte-1.html#paradigma-procedural-estruturado-vs.-orientado-a-objetos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="paradigma-procedural" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> <strong>Paradigma Procedural:</strong><a href="programação-orientada-a-objetos---parte-1.html#paradigma-procedural" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Foca no <strong>“como fazer”</strong>. Baseia-se em três estruturas: <strong>sequência</strong>, <strong>decisão</strong> e <strong>iteração</strong>. O problema principal é a <strong>Lacuna Semântica</strong>, ou seja, a dificuldade de <strong>representar a realidade de forma direta</strong>, pois <strong>dados</strong> e <strong>operações</strong> ficam <strong>desassociados</strong> no código.</p>
+<table>
+<caption>Características do paradigma de programação estruturada segundo CARVALHO [1]</caption>
+<colgroup>
+<col width="33%" />
+<col width="66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><strong>PARADIGMA DE PROGRAMAÇÃO PROCEDIMENTAL (ESTRUTURADA)</strong></th>
+<th align="center"><strong>CARACTERÍSTICAS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Filosofia</td>
+<td align="center">executar <strong>sequência</strong>, <strong>decisão</strong> e <strong>iteração</strong></td>
+</tr>
+<tr class="even">
+<td align="center">Dados e Operações CORRELACIONADAS</td>
+<td align="center">ficam separados</td>
+</tr>
+<tr class="odd">
+<td align="center">Representação da REALIDADE</td>
+<td align="center">Fraca</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/paradigma-estrutural.svg" /><!-- --></p>
+<p>Exemplo 1 : Faça uma calculadora em Python utilizando programação estruturada (a que você utilizou até agora):</p>
+<div class="sourceCode" id="cb157"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb157-1"><a href="programação-orientada-a-objetos---parte-1.html#cb157-1" tabindex="-1"></a><span class="kw">def</span> somar(a, b):</span>
+<span id="cb157-2"><a href="programação-orientada-a-objetos---parte-1.html#cb157-2" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb157-3"><a href="programação-orientada-a-objetos---parte-1.html#cb157-3" tabindex="-1"></a></span>
+<span id="cb157-4"><a href="programação-orientada-a-objetos---parte-1.html#cb157-4" tabindex="-1"></a><span class="kw">def</span> subtrair(a, b):</span>
+<span id="cb157-5"><a href="programação-orientada-a-objetos---parte-1.html#cb157-5" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">-</span> b</span>
+<span id="cb157-6"><a href="programação-orientada-a-objetos---parte-1.html#cb157-6" tabindex="-1"></a></span>
+<span id="cb157-7"><a href="programação-orientada-a-objetos---parte-1.html#cb157-7" tabindex="-1"></a><span class="kw">def</span> multiplicar(a, b):</span>
+<span id="cb157-8"><a href="programação-orientada-a-objetos---parte-1.html#cb157-8" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">*</span> b</span>
+<span id="cb157-9"><a href="programação-orientada-a-objetos---parte-1.html#cb157-9" tabindex="-1"></a></span>
+<span id="cb157-10"><a href="programação-orientada-a-objetos---parte-1.html#cb157-10" tabindex="-1"></a><span class="kw">def</span> dividir(a, b):</span>
+<span id="cb157-11"><a href="programação-orientada-a-objetos---parte-1.html#cb157-11" tabindex="-1"></a>    <span class="cf">if</span> b <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb157-12"><a href="programação-orientada-a-objetos---parte-1.html#cb157-12" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&quot;Erro: divisão por zero&quot;</span></span>
+<span id="cb157-13"><a href="programação-orientada-a-objetos---parte-1.html#cb157-13" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">/</span> b</span>
+<span id="cb157-14"><a href="programação-orientada-a-objetos---parte-1.html#cb157-14" tabindex="-1"></a></span>
+<span id="cb157-15"><a href="programação-orientada-a-objetos---parte-1.html#cb157-15" tabindex="-1"></a></span>
+<span id="cb157-16"><a href="programação-orientada-a-objetos---parte-1.html#cb157-16" tabindex="-1"></a>numero1 <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb157-17"><a href="programação-orientada-a-objetos---parte-1.html#cb157-17" tabindex="-1"></a>numero2 <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb157-18"><a href="programação-orientada-a-objetos---parte-1.html#cb157-18" tabindex="-1"></a></span>
+<span id="cb157-19"><a href="programação-orientada-a-objetos---parte-1.html#cb157-19" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Soma:&quot;</span>, somar(numero1, numero2))</span>
+<span id="cb157-20"><a href="programação-orientada-a-objetos---parte-1.html#cb157-20" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Subtração:&quot;</span>, subtrair(numero1, numero2))</span>
+<span id="cb157-21"><a href="programação-orientada-a-objetos---parte-1.html#cb157-21" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Multiplicação:&quot;</span>, multiplicar(numero1, numero2))</span>
+<span id="cb157-22"><a href="programação-orientada-a-objetos---parte-1.html#cb157-22" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Divisão:&quot;</span>, dividir(numero1, numero2))</span></code></pre></div>
+<p><img src="images/calculadora-paradigma-estrutural.svg" /><!-- --></p>
+<hr />
+</div>
+<div id="paradigma-orientado-a-objetos" class="section level3 hasAnchor" number="9.2.2">
+<h3><span class="header-section-number">9.2.2</span> <strong>Paradigma Orientado a Objetos:</strong><a href="programação-orientada-a-objetos---parte-1.html#paradigma-orientado-a-objetos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Foca no <strong>“o que deve ser feito”</strong>. Procura diminuir a Lacuna Semântica, criando unidades de código mais próximas da forma como pensamos e agimos.</p>
+<table>
+<caption>Características do paradigma de programação Orientada a Objetos segundo CARVALHO [1]</caption>
+<colgroup>
+<col width="38%" />
+<col width="61%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><strong>PARADIGMA DE PROGRAMAÇÃO ORIENTADA A OBJETOS</strong></th>
+<th align="center"><strong>CARACTERÍSTICAS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Filosofia</td>
+<td align="center"><strong>REUSO</strong>, <strong>COESÃO</strong> e <strong>ACOPLAMENTO</strong> no código</td>
+</tr>
+<tr class="even">
+<td align="center">Dados e Operações CORRELACIONADAS</td>
+<td align="center">ficam juntos</td>
+</tr>
+<tr class="odd">
+<td align="center">Representação da REALIDADE</td>
+<td align="center">Forte</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo 1 continuação: Converta a calculadora em Python que você criou utilizando programação estruturada para o paradigma de programação Orientada a Objetos:</p>
+<div class="sourceCode" id="cb158"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb158-1"><a href="programação-orientada-a-objetos---parte-1.html#cb158-1" tabindex="-1"></a><span class="kw">class</span> Calculadora:</span>
+<span id="cb158-2"><a href="programação-orientada-a-objetos---parte-1.html#cb158-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, numero1, numero2):</span>
+<span id="cb158-3"><a href="programação-orientada-a-objetos---parte-1.html#cb158-3" tabindex="-1"></a>        <span class="va">self</span>.numero1 <span class="op">=</span> numero1</span>
+<span id="cb158-4"><a href="programação-orientada-a-objetos---parte-1.html#cb158-4" tabindex="-1"></a>        <span class="va">self</span>.numero2 <span class="op">=</span> numero2</span>
+<span id="cb158-5"><a href="programação-orientada-a-objetos---parte-1.html#cb158-5" tabindex="-1"></a></span>
+<span id="cb158-6"><a href="programação-orientada-a-objetos---parte-1.html#cb158-6" tabindex="-1"></a>    <span class="kw">def</span> somar(<span class="va">self</span>):</span>
+<span id="cb158-7"><a href="programação-orientada-a-objetos---parte-1.html#cb158-7" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.numero1 <span class="op">+</span> <span class="va">self</span>.numero2</span>
+<span id="cb158-8"><a href="programação-orientada-a-objetos---parte-1.html#cb158-8" tabindex="-1"></a></span>
+<span id="cb158-9"><a href="programação-orientada-a-objetos---parte-1.html#cb158-9" tabindex="-1"></a>    <span class="kw">def</span> subtrair(<span class="va">self</span>):</span>
+<span id="cb158-10"><a href="programação-orientada-a-objetos---parte-1.html#cb158-10" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.numero1 <span class="op">-</span> <span class="va">self</span>.numero2</span>
+<span id="cb158-11"><a href="programação-orientada-a-objetos---parte-1.html#cb158-11" tabindex="-1"></a></span>
+<span id="cb158-12"><a href="programação-orientada-a-objetos---parte-1.html#cb158-12" tabindex="-1"></a>    <span class="kw">def</span> multiplicar(<span class="va">self</span>):</span>
+<span id="cb158-13"><a href="programação-orientada-a-objetos---parte-1.html#cb158-13" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.numero1 <span class="op">*</span> <span class="va">self</span>.numero2</span>
+<span id="cb158-14"><a href="programação-orientada-a-objetos---parte-1.html#cb158-14" tabindex="-1"></a></span>
+<span id="cb158-15"><a href="programação-orientada-a-objetos---parte-1.html#cb158-15" tabindex="-1"></a>    <span class="kw">def</span> dividir(<span class="va">self</span>):</span>
+<span id="cb158-16"><a href="programação-orientada-a-objetos---parte-1.html#cb158-16" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.numero2 <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb158-17"><a href="programação-orientada-a-objetos---parte-1.html#cb158-17" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">&quot;Erro: divisão por zero&quot;</span></span>
+<span id="cb158-18"><a href="programação-orientada-a-objetos---parte-1.html#cb158-18" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.numero1 <span class="op">/</span> <span class="va">self</span>.numero2</span>
+<span id="cb158-19"><a href="programação-orientada-a-objetos---parte-1.html#cb158-19" tabindex="-1"></a></span>
+<span id="cb158-20"><a href="programação-orientada-a-objetos---parte-1.html#cb158-20" tabindex="-1"></a></span>
+<span id="cb158-21"><a href="programação-orientada-a-objetos---parte-1.html#cb158-21" tabindex="-1"></a>calc <span class="op">=</span> Calculadora(<span class="dv">10</span>, <span class="dv">5</span>)</span>
+<span id="cb158-22"><a href="programação-orientada-a-objetos---parte-1.html#cb158-22" tabindex="-1"></a></span>
+<span id="cb158-23"><a href="programação-orientada-a-objetos---parte-1.html#cb158-23" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Soma:&quot;</span>, calc.somar())</span>
+<span id="cb158-24"><a href="programação-orientada-a-objetos---parte-1.html#cb158-24" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Subtração:&quot;</span>, calc.subtrair())</span>
+<span id="cb158-25"><a href="programação-orientada-a-objetos---parte-1.html#cb158-25" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Multiplicação:&quot;</span>, calc.multiplicar())</span>
+<span id="cb158-26"><a href="programação-orientada-a-objetos---parte-1.html#cb158-26" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Divisão:&quot;</span>, calc.dividir())</span></code></pre></div>
+<div id="representação-da-estrutura-do-programa" class="section level4 hasAnchor" number="9.2.2.1">
+<h4><span class="header-section-number">9.2.2.1</span> Representação da estrutura do programa<a href="programação-orientada-a-objetos---parte-1.html#representa%C3%A7%C3%A3o-da-estrutura-do-programa" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/calculadora-uml-diagrama-classes.svg" /><!-- --></p>
+</div>
+<div id="representação-do-fluxo-de-execução-do-programa" class="section level4 hasAnchor" number="9.2.2.2">
+<h4><span class="header-section-number">9.2.2.2</span> Representação do fluxo de execução do programa<a href="programação-orientada-a-objetos---parte-1.html#representa%C3%A7%C3%A3o-do-fluxo-de-execu%C3%A7%C3%A3o-do-programa" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/calculadora-uml-diagrama-sequencia.svg" /><!-- --></p>
 <ul>
-<li><strong>Procedural:</strong> Foca no <strong>“como fazer”</strong>. Baseia-se em três estruturas: sequência, decisão e iteração. O problema principal é o <strong>Gap Semântico</strong>: a dificuldade de representar a realidade de forma direta, pois dados e operações ficam desassociados no código.</li>
-<li><strong>Orientação a Objetos:</strong> Foca no <strong>“o que deve ser feito”</strong>. Visa diminuir o Gap Semântico, criando unidades de código mais próximas da forma como pensamos e agimos.</li>
 <li><strong>Vantagens da OO:</strong> Melhor expressividade, maior reúso de código, facilidade de manutenção e criação de sistemas mais complexos com menor acoplamento.</li>
 </ul>
+<div class="sourceCode" id="cb159"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+<hr />
+</div>
+</div>
 </div>
 <div id="conceitos-estruturais-exemplos-em-python" class="section level2 hasAnchor" number="9.3">
-<h2><span class="header-section-number">9.3</span> <strong>3. Conceitos Estruturais (Exemplos em Python)</strong><a href="programação-orientada-a-objetos---parte-1.html#conceitos-estruturais-exemplos-em-python" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">9.3</span> <strong>Conceitos Estruturais (Exemplos em Python)</strong><a href="programação-orientada-a-objetos---parte-1.html#conceitos-estruturais-exemplos-em-python" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><strong>Classe:</strong> É o “molde” ou abstração base a partir da qual os objetos são criados.</li>
 <li><strong>Atributo:</strong> Define a estrutura de dados e as características da classe.</li>
 <li><strong>Método:</strong> Define as ações ou comportamentos que a classe oferece.</li>
 <li><strong>Objeto:</strong> É a instância (realização) de uma classe.</li>
 </ul>
+<table>
+<caption>Semelhança do papel estrutural utilizado por Linguagens Orientadas a Objeto e componentes de tabelas (Bancos de Dados).</caption>
+<thead>
+<tr class="header">
+<th>Conceito OO</th>
+<th>Conceito Relacional</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Classe</td>
+<td>Tabela</td>
+<td>Estrutura que define o modelo</td>
+</tr>
+<tr class="even">
+<td>Atributo</td>
+<td>Coluna</td>
+<td>Característica (campo)</td>
+</tr>
+<tr class="odd">
+<td>Objeto</td>
+<td>Linha (registro)</td>
+<td>Instância completa da tabela</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Exemplo em Python:</strong></p>
-<div class="sourceCode" id="cb157"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb157-1"><a href="programação-orientada-a-objetos---parte-1.html#cb157-1" tabindex="-1"></a><span class="kw">class</span> Personagem:</span>
-<span id="cb157-2"><a href="programação-orientada-a-objetos---parte-1.html#cb157-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, nome, altura): <span class="co"># Construtor (método especial)</span></span>
-<span id="cb157-3"><a href="programação-orientada-a-objetos---parte-1.html#cb157-3" tabindex="-1"></a>        <span class="va">self</span>.nome <span class="op">=</span> nome              <span class="co"># Atributo</span></span>
-<span id="cb157-4"><a href="programação-orientada-a-objetos---parte-1.html#cb157-4" tabindex="-1"></a>        <span class="va">self</span>.altura <span class="op">=</span> altura</span>
-<span id="cb157-5"><a href="programação-orientada-a-objetos---parte-1.html#cb157-5" tabindex="-1"></a></span>
-<span id="cb157-6"><a href="programação-orientada-a-objetos---parte-1.html#cb157-6" tabindex="-1"></a>    <span class="kw">def</span> pular(<span class="va">self</span>):                  <span class="co"># Método</span></span>
-<span id="cb157-7"><a href="programação-orientada-a-objetos---parte-1.html#cb157-7" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>nome<span class="sc">}</span><span class="ss"> pulou!&quot;</span>)</span>
-<span id="cb157-8"><a href="programação-orientada-a-objetos---parte-1.html#cb157-8" tabindex="-1"></a></span>
-<span id="cb157-9"><a href="programação-orientada-a-objetos---parte-1.html#cb157-9" tabindex="-1"></a><span class="co"># Instanciação de Objetos</span></span>
-<span id="cb157-10"><a href="programação-orientada-a-objetos---parte-1.html#cb157-10" tabindex="-1"></a>mario <span class="op">=</span> Personagem(<span class="st">&quot;Mario&quot;</span>, <span class="fl">1.60</span>)</span>
-<span id="cb157-11"><a href="programação-orientada-a-objetos---parte-1.html#cb157-11" tabindex="-1"></a>mario.pular() <span class="co"># Mensagem enviada ao objeto</span></span></code></pre></div>
+<div class="sourceCode" id="cb160"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb160-1"><a href="programação-orientada-a-objetos---parte-1.html#cb160-1" tabindex="-1"></a><span class="kw">class</span> Personagem:</span>
+<span id="cb160-2"><a href="programação-orientada-a-objetos---parte-1.html#cb160-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, nome, altura): <span class="co"># Construtor (método especial)</span></span>
+<span id="cb160-3"><a href="programação-orientada-a-objetos---parte-1.html#cb160-3" tabindex="-1"></a>        <span class="va">self</span>.nome <span class="op">=</span> nome              <span class="co"># Atributo</span></span>
+<span id="cb160-4"><a href="programação-orientada-a-objetos---parte-1.html#cb160-4" tabindex="-1"></a>        <span class="va">self</span>.altura <span class="op">=</span> altura</span>
+<span id="cb160-5"><a href="programação-orientada-a-objetos---parte-1.html#cb160-5" tabindex="-1"></a></span>
+<span id="cb160-6"><a href="programação-orientada-a-objetos---parte-1.html#cb160-6" tabindex="-1"></a>    <span class="kw">def</span> pular(<span class="va">self</span>):                  <span class="co"># Método</span></span>
+<span id="cb160-7"><a href="programação-orientada-a-objetos---parte-1.html#cb160-7" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>nome<span class="sc">}</span><span class="ss"> pulou!&quot;</span>)</span>
+<span id="cb160-8"><a href="programação-orientada-a-objetos---parte-1.html#cb160-8" tabindex="-1"></a></span>
+<span id="cb160-9"><a href="programação-orientada-a-objetos---parte-1.html#cb160-9" tabindex="-1"></a><span class="co"># Instanciação de Objetos</span></span>
+<span id="cb160-10"><a href="programação-orientada-a-objetos---parte-1.html#cb160-10" tabindex="-1"></a>mario <span class="op">=</span> Personagem(<span class="st">&quot;Mario&quot;</span>, <span class="fl">1.60</span>)</span>
+<span id="cb160-11"><a href="programação-orientada-a-objetos---parte-1.html#cb160-11" tabindex="-1"></a>mario.pular() <span class="co"># Mensagem enviada ao objeto</span></span></code></pre></div>
 </div>
-<div id="referência-abnt-da-fonte" class="section level2 hasAnchor" number="9.4">
-<h2><span class="header-section-number">9.4</span> <strong>Referência ABNT da Fonte</strong><a href="programação-orientada-a-objetos---parte-1.html#refer%C3%AAncia-abnt-da-fonte" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="referências-1" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> <strong>Referências</strong><a href="programação-orientada-a-objetos---parte-1.html#refer%C3%AAncias-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>CARVALHO, Thiago Leite e. <strong>Orientação a Objetos</strong>: aprenda seus conceitos e suas aplicabilidades de forma efetiva. 1. ed. [S.l.]: Casa do Código, [ano não informado].</p>
 
 </div>
