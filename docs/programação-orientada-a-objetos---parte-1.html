@@ -361,7 +361,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.8.2" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#section"><i class="fa fa-check"></i><b>9.8.2</b> </a></li>
 </ul></li>
 <li class="chapter" data-level="9.9" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#refer%C3%AAncias-1"><i class="fa fa-check"></i><b>9.9</b> <strong>Referências</strong></a></li>
-<li class="chapter" data-level="9.10" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios---programa%C3%A7%C3%A3o-orientada-a-objetos---parte-1--"><i class="fa fa-check"></i><b>9.10</b> EXERCÍCIOS - Programação Orientada a Objetos - Parte 1 -</a></li>
+<li class="chapter" data-level="9.10" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios---programa%C3%A7%C3%A3o-orientada-a-objetos---parte-1--"><i class="fa fa-check"></i><b>9.10</b> EXERCÍCIOS - Programação Orientada a Objetos - Parte 1 -</a>
+<ul>
+<li class="chapter" data-level="9.10.1" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>9.10.1</b> Exercícios</a></li>
+<li class="chapter" data-level="9.10.2" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#respostas-1"><i class="fa fa-check"></i><b>9.10.2</b> Respostas</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html"><i class="fa fa-check"></i><b>10</b> Programação Orientada a Objetos - Parte 2</a>
 <ul>
@@ -761,7 +765,80 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="exercícios---programação-orientada-a-objetos---parte-1--" class="section level2 hasAnchor" number="9.10">
 <h2><span class="header-section-number">9.10</span> EXERCÍCIOS - Programação Orientada a Objetos - Parte 1 -<a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios---programa%C3%A7%C3%A3o-orientada-a-objetos---parte-1--" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="exercícios-1" class="section level3 hasAnchor" number="9.10.1">
+<h3><span class="header-section-number">9.10.1</span> Exercícios<a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Exercício 1 - Transoforme o código abaixo do paradigma estruturado para o
+paradigma Orientado a Objetos:</p>
+<div class="sourceCode" id="cb165"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb165-1"><a href="programação-orientada-a-objetos---parte-1.html#cb165-1" tabindex="-1"></a><span class="co"># Dados do aluno</span></span>
+<span id="cb165-2"><a href="programação-orientada-a-objetos---parte-1.html#cb165-2" tabindex="-1"></a>nome <span class="op">=</span> <span class="st">&quot;Maria&quot;</span></span>
+<span id="cb165-3"><a href="programação-orientada-a-objetos---parte-1.html#cb165-3" tabindex="-1"></a>nota1 <span class="op">=</span> <span class="fl">7.5</span></span>
+<span id="cb165-4"><a href="programação-orientada-a-objetos---parte-1.html#cb165-4" tabindex="-1"></a>nota2 <span class="op">=</span> <span class="fl">8.0</span></span>
+<span id="cb165-5"><a href="programação-orientada-a-objetos---parte-1.html#cb165-5" tabindex="-1"></a></span>
+<span id="cb165-6"><a href="programação-orientada-a-objetos---parte-1.html#cb165-6" tabindex="-1"></a><span class="co"># Função para calcular média</span></span>
+<span id="cb165-7"><a href="programação-orientada-a-objetos---parte-1.html#cb165-7" tabindex="-1"></a><span class="kw">def</span> calcular_media(n1, n2):</span>
+<span id="cb165-8"><a href="programação-orientada-a-objetos---parte-1.html#cb165-8" tabindex="-1"></a>    <span class="cf">return</span> (n1 <span class="op">+</span> n2) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb165-9"><a href="programação-orientada-a-objetos---parte-1.html#cb165-9" tabindex="-1"></a></span>
+<span id="cb165-10"><a href="programação-orientada-a-objetos---parte-1.html#cb165-10" tabindex="-1"></a><span class="co"># Função para verificar situação</span></span>
+<span id="cb165-11"><a href="programação-orientada-a-objetos---parte-1.html#cb165-11" tabindex="-1"></a><span class="kw">def</span> verificar_situacao(media):</span>
+<span id="cb165-12"><a href="programação-orientada-a-objetos---parte-1.html#cb165-12" tabindex="-1"></a>    <span class="cf">if</span> media <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
+<span id="cb165-13"><a href="programação-orientada-a-objetos---parte-1.html#cb165-13" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&quot;Aprovado&quot;</span></span>
+<span id="cb165-14"><a href="programação-orientada-a-objetos---parte-1.html#cb165-14" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb165-15"><a href="programação-orientada-a-objetos---parte-1.html#cb165-15" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&quot;Reprovado&quot;</span></span>
+<span id="cb165-16"><a href="programação-orientada-a-objetos---parte-1.html#cb165-16" tabindex="-1"></a></span>
+<span id="cb165-17"><a href="programação-orientada-a-objetos---parte-1.html#cb165-17" tabindex="-1"></a><span class="co"># Processamento</span></span>
+<span id="cb165-18"><a href="programação-orientada-a-objetos---parte-1.html#cb165-18" tabindex="-1"></a>media <span class="op">=</span> calcular_media(nota1, nota2)</span>
+<span id="cb165-19"><a href="programação-orientada-a-objetos---parte-1.html#cb165-19" tabindex="-1"></a>situacao <span class="op">=</span> verificar_situacao(media)</span>
+<span id="cb165-20"><a href="programação-orientada-a-objetos---parte-1.html#cb165-20" tabindex="-1"></a></span>
+<span id="cb165-21"><a href="programação-orientada-a-objetos---parte-1.html#cb165-21" tabindex="-1"></a><span class="co"># Saída</span></span>
+<span id="cb165-22"><a href="programação-orientada-a-objetos---parte-1.html#cb165-22" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Aluno:&quot;</span>, nome)</span>
+<span id="cb165-23"><a href="programação-orientada-a-objetos---parte-1.html#cb165-23" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Média:&quot;</span>, media)</span>
+<span id="cb165-24"><a href="programação-orientada-a-objetos---parte-1.html#cb165-24" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Situação:&quot;</span>, situacao)</span></code></pre></div>
+<div class="sourceCode" id="cb166"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb166-1"><a href="programação-orientada-a-objetos---parte-1.html#cb166-1" tabindex="-1"></a></span>
+<span id="cb166-2"><a href="programação-orientada-a-objetos---parte-1.html#cb166-2" tabindex="-1"></a></span>
+<span id="cb166-3"><a href="programação-orientada-a-objetos---parte-1.html#cb166-3" tabindex="-1"></a></span>
+<span id="cb166-4"><a href="programação-orientada-a-objetos---parte-1.html#cb166-4" tabindex="-1"></a></span>
+<span id="cb166-5"><a href="programação-orientada-a-objetos---parte-1.html#cb166-5" tabindex="-1"></a></span>
+<span id="cb166-6"><a href="programação-orientada-a-objetos---parte-1.html#cb166-6" tabindex="-1"></a></span>
+<span id="cb166-7"><a href="programação-orientada-a-objetos---parte-1.html#cb166-7" tabindex="-1"></a></span>
+<span id="cb166-8"><a href="programação-orientada-a-objetos---parte-1.html#cb166-8" tabindex="-1"></a></span>
+<span id="cb166-9"><a href="programação-orientada-a-objetos---parte-1.html#cb166-9" tabindex="-1"></a></span>
+<span id="cb166-10"><a href="programação-orientada-a-objetos---parte-1.html#cb166-10" tabindex="-1"></a></span>
+<span id="cb166-11"><a href="programação-orientada-a-objetos---parte-1.html#cb166-11" tabindex="-1"></a></span>
+<span id="cb166-12"><a href="programação-orientada-a-objetos---parte-1.html#cb166-12" tabindex="-1"></a></span>
+<span id="cb166-13"><a href="programação-orientada-a-objetos---parte-1.html#cb166-13" tabindex="-1"></a></span>
+<span id="cb166-14"><a href="programação-orientada-a-objetos---parte-1.html#cb166-14" tabindex="-1"></a></span>
+<span id="cb166-15"><a href="programação-orientada-a-objetos---parte-1.html#cb166-15" tabindex="-1"></a></span></code></pre></div>
+</div>
+<div id="respostas-1" class="section level3 hasAnchor" number="9.10.2">
+<h3><span class="header-section-number">9.10.2</span> Respostas<a href="programação-orientada-a-objetos---parte-1.html#respostas-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Resposta do Exercício 1:</p>
+<div class="sourceCode" id="cb167"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb167-1"><a href="programação-orientada-a-objetos---parte-1.html#cb167-1" tabindex="-1"></a><span class="kw">class</span> Aluno:</span>
+<span id="cb167-2"><a href="programação-orientada-a-objetos---parte-1.html#cb167-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, nome, nota1, nota2):</span>
+<span id="cb167-3"><a href="programação-orientada-a-objetos---parte-1.html#cb167-3" tabindex="-1"></a>        <span class="va">self</span>.nome <span class="op">=</span> nome</span>
+<span id="cb167-4"><a href="programação-orientada-a-objetos---parte-1.html#cb167-4" tabindex="-1"></a>        <span class="va">self</span>.nota1 <span class="op">=</span> nota1</span>
+<span id="cb167-5"><a href="programação-orientada-a-objetos---parte-1.html#cb167-5" tabindex="-1"></a>        <span class="va">self</span>.nota2 <span class="op">=</span> nota2</span>
+<span id="cb167-6"><a href="programação-orientada-a-objetos---parte-1.html#cb167-6" tabindex="-1"></a></span>
+<span id="cb167-7"><a href="programação-orientada-a-objetos---parte-1.html#cb167-7" tabindex="-1"></a>    <span class="kw">def</span> calcular_media(<span class="va">self</span>):</span>
+<span id="cb167-8"><a href="programação-orientada-a-objetos---parte-1.html#cb167-8" tabindex="-1"></a>        <span class="cf">return</span> (<span class="va">self</span>.nota1 <span class="op">+</span> <span class="va">self</span>.nota2) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb167-9"><a href="programação-orientada-a-objetos---parte-1.html#cb167-9" tabindex="-1"></a></span>
+<span id="cb167-10"><a href="programação-orientada-a-objetos---parte-1.html#cb167-10" tabindex="-1"></a>    <span class="kw">def</span> verificar_situacao(<span class="va">self</span>):</span>
+<span id="cb167-11"><a href="programação-orientada-a-objetos---parte-1.html#cb167-11" tabindex="-1"></a>        media <span class="op">=</span> <span class="va">self</span>.calcular_media()</span>
+<span id="cb167-12"><a href="programação-orientada-a-objetos---parte-1.html#cb167-12" tabindex="-1"></a>        <span class="cf">if</span> media <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
+<span id="cb167-13"><a href="programação-orientada-a-objetos---parte-1.html#cb167-13" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">&quot;Aprovado&quot;</span></span>
+<span id="cb167-14"><a href="programação-orientada-a-objetos---parte-1.html#cb167-14" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb167-15"><a href="programação-orientada-a-objetos---parte-1.html#cb167-15" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">&quot;Reprovado&quot;</span></span>
+<span id="cb167-16"><a href="programação-orientada-a-objetos---parte-1.html#cb167-16" tabindex="-1"></a></span>
+<span id="cb167-17"><a href="programação-orientada-a-objetos---parte-1.html#cb167-17" tabindex="-1"></a>    <span class="kw">def</span> mostrar_dados(<span class="va">self</span>):</span>
+<span id="cb167-18"><a href="programação-orientada-a-objetos---parte-1.html#cb167-18" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Aluno:&quot;</span>, <span class="va">self</span>.nome)</span>
+<span id="cb167-19"><a href="programação-orientada-a-objetos---parte-1.html#cb167-19" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Média:&quot;</span>, <span class="va">self</span>.calcular_media())</span>
+<span id="cb167-20"><a href="programação-orientada-a-objetos---parte-1.html#cb167-20" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Situação:&quot;</span>, <span class="va">self</span>.verificar_situacao())</span>
+<span id="cb167-21"><a href="programação-orientada-a-objetos---parte-1.html#cb167-21" tabindex="-1"></a></span>
+<span id="cb167-22"><a href="programação-orientada-a-objetos---parte-1.html#cb167-22" tabindex="-1"></a></span>
+<span id="cb167-23"><a href="programação-orientada-a-objetos---parte-1.html#cb167-23" tabindex="-1"></a><span class="co"># Uso da classe</span></span>
+<span id="cb167-24"><a href="programação-orientada-a-objetos---parte-1.html#cb167-24" tabindex="-1"></a>aluno1 <span class="op">=</span> Aluno(<span class="st">&quot;Maria&quot;</span>, <span class="fl">7.5</span>, <span class="fl">8.0</span>)</span>
+<span id="cb167-25"><a href="programação-orientada-a-objetos---parte-1.html#cb167-25" tabindex="-1"></a>aluno1.mostrar_dados()</span></code></pre></div>
 
+</div>
 </div>
 </div>
             </section>

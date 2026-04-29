@@ -224,6 +224,8 @@ saída-2
 section
 referências-1
 exercícios---programação-orientada-a-objetos---parte-1--
+exercícios-1
+respostas-1
 programação-orientada-a-objetos---parte-2
 relacionamentos-organização-e-boas-práticas
 conceitos-relacionais

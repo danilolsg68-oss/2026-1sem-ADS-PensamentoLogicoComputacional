@@ -361,7 +361,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.8.2" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#section"><i class="fa fa-check"></i><b>9.8.2</b> </a></li>
 </ul></li>
 <li class="chapter" data-level="9.9" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#refer%C3%AAncias-1"><i class="fa fa-check"></i><b>9.9</b> <strong>Referências</strong></a></li>
-<li class="chapter" data-level="9.10" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios---programa%C3%A7%C3%A3o-orientada-a-objetos---parte-1--"><i class="fa fa-check"></i><b>9.10</b> EXERCÍCIOS - Programação Orientada a Objetos - Parte 1 -</a></li>
+<li class="chapter" data-level="9.10" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios---programa%C3%A7%C3%A3o-orientada-a-objetos---parte-1--"><i class="fa fa-check"></i><b>9.10</b> EXERCÍCIOS - Programação Orientada a Objetos - Parte 1 -</a>
+<ul>
+<li class="chapter" data-level="9.10.1" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>9.10.1</b> Exercícios</a></li>
+<li class="chapter" data-level="9.10.2" data-path="programação-orientada-a-objetos---parte-1.html"><a href="programação-orientada-a-objetos---parte-1.html#respostas-1"><i class="fa fa-check"></i><b>9.10.2</b> Respostas</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="programação-orientada-a-objetos---parte-2.html"><a href="programação-orientada-a-objetos---parte-2.html"><i class="fa fa-check"></i><b>10</b> Programação Orientada a Objetos - Parte 2</a>
 <ul>
@@ -410,19 +414,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>Interface:</strong> Define um <strong>contrato</strong> de métodos que a classe é obrigada a implementar, garantindo padronização.</li>
 </ul>
 <p><strong>Exemplo em Python (Herança e Associação):</strong></p>
-<div class="sourceCode" id="cb165"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb165-1"><a href="programação-orientada-a-objetos---parte-2.html#cb165-1" tabindex="-1"></a><span class="kw">class</span> Pessoa: <span class="co"># Classe Abstrata (Conceitual)</span></span>
-<span id="cb165-2"><a href="programação-orientada-a-objetos---parte-2.html#cb165-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, nome):</span>
-<span id="cb165-3"><a href="programação-orientada-a-objetos---parte-2.html#cb165-3" tabindex="-1"></a>        <span class="va">self</span>.nome <span class="op">=</span> nome</span>
-<span id="cb165-4"><a href="programação-orientada-a-objetos---parte-2.html#cb165-4" tabindex="-1"></a></span>
-<span id="cb165-5"><a href="programação-orientada-a-objetos---parte-2.html#cb165-5" tabindex="-1"></a><span class="kw">class</span> Medico(Pessoa): <span class="co"># Herança: Médico &quot;é uma&quot; Pessoa</span></span>
-<span id="cb165-6"><a href="programação-orientada-a-objetos---parte-2.html#cb165-6" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, nome, crm, endereco):</span>
-<span id="cb165-7"><a href="programação-orientada-a-objetos---parte-2.html#cb165-7" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>(nome)</span>
-<span id="cb165-8"><a href="programação-orientada-a-objetos---parte-2.html#cb165-8" tabindex="-1"></a>        <span class="va">self</span>.crm <span class="op">=</span> crm</span>
-<span id="cb165-9"><a href="programação-orientada-a-objetos---parte-2.html#cb165-9" tabindex="-1"></a>        <span class="va">self</span>.endereco <span class="op">=</span> endereco <span class="co"># Associação: Médico &quot;tem um&quot; Endereço</span></span>
-<span id="cb165-10"><a href="programação-orientada-a-objetos---parte-2.html#cb165-10" tabindex="-1"></a></span>
-<span id="cb165-11"><a href="programação-orientada-a-objetos---parte-2.html#cb165-11" tabindex="-1"></a><span class="kw">class</span> Endereco:</span>
-<span id="cb165-12"><a href="programação-orientada-a-objetos---parte-2.html#cb165-12" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, rua):</span>
-<span id="cb165-13"><a href="programação-orientada-a-objetos---parte-2.html#cb165-13" tabindex="-1"></a>        <span class="va">self</span>.rua <span class="op">=</span> rua</span></code></pre></div>
+<div class="sourceCode" id="cb168"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb168-1"><a href="programação-orientada-a-objetos---parte-2.html#cb168-1" tabindex="-1"></a><span class="kw">class</span> Pessoa: <span class="co"># Classe Abstrata (Conceitual)</span></span>
+<span id="cb168-2"><a href="programação-orientada-a-objetos---parte-2.html#cb168-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, nome):</span>
+<span id="cb168-3"><a href="programação-orientada-a-objetos---parte-2.html#cb168-3" tabindex="-1"></a>        <span class="va">self</span>.nome <span class="op">=</span> nome</span>
+<span id="cb168-4"><a href="programação-orientada-a-objetos---parte-2.html#cb168-4" tabindex="-1"></a></span>
+<span id="cb168-5"><a href="programação-orientada-a-objetos---parte-2.html#cb168-5" tabindex="-1"></a><span class="kw">class</span> Medico(Pessoa): <span class="co"># Herança: Médico &quot;é uma&quot; Pessoa</span></span>
+<span id="cb168-6"><a href="programação-orientada-a-objetos---parte-2.html#cb168-6" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, nome, crm, endereco):</span>
+<span id="cb168-7"><a href="programação-orientada-a-objetos---parte-2.html#cb168-7" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>(nome)</span>
+<span id="cb168-8"><a href="programação-orientada-a-objetos---parte-2.html#cb168-8" tabindex="-1"></a>        <span class="va">self</span>.crm <span class="op">=</span> crm</span>
+<span id="cb168-9"><a href="programação-orientada-a-objetos---parte-2.html#cb168-9" tabindex="-1"></a>        <span class="va">self</span>.endereco <span class="op">=</span> endereco <span class="co"># Associação: Médico &quot;tem um&quot; Endereço</span></span>
+<span id="cb168-10"><a href="programação-orientada-a-objetos---parte-2.html#cb168-10" tabindex="-1"></a></span>
+<span id="cb168-11"><a href="programação-orientada-a-objetos---parte-2.html#cb168-11" tabindex="-1"></a><span class="kw">class</span> Endereco:</span>
+<span id="cb168-12"><a href="programação-orientada-a-objetos---parte-2.html#cb168-12" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, rua):</span>
+<span id="cb168-13"><a href="programação-orientada-a-objetos---parte-2.html#cb168-13" tabindex="-1"></a>        <span class="va">self</span>.rua <span class="op">=</span> rua</span></code></pre></div>
 </div>
 <div id="conceitos-organizacionais" class="section level2 hasAnchor" number="10.3">
 <h2><span class="header-section-number">10.3</span> <strong>Conceitos Organizacionais</strong><a href="programação-orientada-a-objetos---parte-2.html#conceitos-organizacionais" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -442,13 +446,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>Sobrescrita:</strong> Redefinir um método herdado da superclasse para adaptar o comportamento na subclasse.</li>
 </ul>
 <p><strong>Exemplo em Python:</strong></p>
-<div class="sourceCode" id="cb166"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb166-1"><a href="programação-orientada-a-objetos---parte-2.html#cb166-1" tabindex="-1"></a><span class="kw">class</span> Procedimento:</span>
-<span id="cb166-2"><a href="programação-orientada-a-objetos---parte-2.html#cb166-2" tabindex="-1"></a>    <span class="kw">def</span> calcular_total(<span class="va">self</span>):</span>
-<span id="cb166-3"><a href="programação-orientada-a-objetos---parte-2.html#cb166-3" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">0</span></span>
-<span id="cb166-4"><a href="programação-orientada-a-objetos---parte-2.html#cb166-4" tabindex="-1"></a></span>
-<span id="cb166-5"><a href="programação-orientada-a-objetos---parte-2.html#cb166-5" tabindex="-1"></a><span class="kw">class</span> Faringoplastia(Procedimento):</span>
-<span id="cb166-6"><a href="programação-orientada-a-objetos---parte-2.html#cb166-6" tabindex="-1"></a>    <span class="kw">def</span> calcular_total(<span class="va">self</span>): <span class="co"># Sobrescrita</span></span>
-<span id="cb166-7"><a href="programação-orientada-a-objetos---parte-2.html#cb166-7" tabindex="-1"></a>        <span class="cf">return</span> <span class="fl">1500.00</span>        <span class="co"># Polimorfismo na prática</span></span></code></pre></div>
+<div class="sourceCode" id="cb169"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb169-1"><a href="programação-orientada-a-objetos---parte-2.html#cb169-1" tabindex="-1"></a><span class="kw">class</span> Procedimento:</span>
+<span id="cb169-2"><a href="programação-orientada-a-objetos---parte-2.html#cb169-2" tabindex="-1"></a>    <span class="kw">def</span> calcular_total(<span class="va">self</span>):</span>
+<span id="cb169-3"><a href="programação-orientada-a-objetos---parte-2.html#cb169-3" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">0</span></span>
+<span id="cb169-4"><a href="programação-orientada-a-objetos---parte-2.html#cb169-4" tabindex="-1"></a></span>
+<span id="cb169-5"><a href="programação-orientada-a-objetos---parte-2.html#cb169-5" tabindex="-1"></a><span class="kw">class</span> Faringoplastia(Procedimento):</span>
+<span id="cb169-6"><a href="programação-orientada-a-objetos---parte-2.html#cb169-6" tabindex="-1"></a>    <span class="kw">def</span> calcular_total(<span class="va">self</span>): <span class="co"># Sobrescrita</span></span>
+<span id="cb169-7"><a href="programação-orientada-a-objetos---parte-2.html#cb169-7" tabindex="-1"></a>        <span class="cf">return</span> <span class="fl">1500.00</span>        <span class="co"># Polimorfismo na prática</span></span></code></pre></div>
 <hr />
 </div>
 <div id="referência-abnt-da-fonte" class="section level2 hasAnchor" number="10.5">

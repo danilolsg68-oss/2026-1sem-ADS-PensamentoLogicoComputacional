@@ -1,1 +1,88 @@
 ## EXERCÍCIOS - Programação Orientada a Objetos - Parte 1 - 
+
+### Exercícios
+
+Exercício 1 - Transoforme o código abaixo do paradigma estruturado para o 
+paradigma Orientado a Objetos:
+
+```python
+# Dados do aluno
+nome = "Maria"
+nota1 = 7.5
+nota2 = 8.0
+
+# Função para calcular média
+def calcular_media(n1, n2):
+    return (n1 + n2) / 2
+
+# Função para verificar situação
+def verificar_situacao(media):
+    if media >= 7:
+        return "Aprovado"
+    else:
+        return "Reprovado"
+
+# Processamento
+media = calcular_media(nota1, nota2)
+situacao = verificar_situacao(media)
+
+# Saída
+print("Aluno:", nome)
+print("Média:", media)
+print("Situação:", situacao)
+```
+
+```python
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+### Respostas
+
+Resposta do Exercício 1:
+
+```python
+class Aluno:
+    def __init__(self, nome, nota1, nota2):
+        self.nome = nome
+        self.nota1 = nota1
+        self.nota2 = nota2
+
+    def calcular_media(self):
+        return (self.nota1 + self.nota2) / 2
+
+    def verificar_situacao(self):
+        media = self.calcular_media()
+        if media >= 7:
+            return "Aprovado"
+        else:
+            return "Reprovado"
+
+    def mostrar_dados(self):
+        print("Aluno:", self.nome)
+        print("Média:", self.calcular_media())
+        print("Situação:", self.verificar_situacao())
+
+
+# Uso da classe
+aluno1 = Aluno("Maria", 7.5, 8.0)
+aluno1.mostrar_dados()
+```
+
+
