@@ -108,9 +108,11 @@ end note
 
 ## **Paradigma Procedural (Estruturado) vs. Orientado a Objetos**
 
-### **Paradigma Procedural:**
+### **Paradigma Estruturado ou Procedural (ou Procedimental):**
 
-Foca no **"como fazer"**. Baseia-se em três estruturas: **sequência**, **decisão** e **iteração**. O problema principal é a **Lacuna Semântica**, ou seja, a dificuldade de **representar a realidade de forma direta**, pois **dados** e **operações** ficam **desassociados** no código.
+Foca no **"como fazer"**. Baseia-se em três estruturas: **sequência**, **decisão** e **iteração**.
+
+O problema principal é a **Lacuna Semântica**, ou seja, a dificuldade de **representar a realidade de forma direta**, pois **dados** e **operações** ficam **desassociados** no código.
 
 | **PARADIGMA DE PROGRAMAÇÃO PROCEDIMENTAL (ESTRUTURADA)** | **CARACTERÍSTICAS** |
 |:-----------------------:|:---------------------------------------------:|
@@ -139,12 +141,14 @@ top to bottom direction
 
 rectangle "Sequência\nPasso 1 → Passo 2 → Passo 3 → ... FIM " as sequencia #FFF4CC {
 
+  rectangle "INÍCIO"                        as inicio
   rectangle "Escreva na tela !"             as escrevatela
   rectangle "Leia do teclado..."            as leiateclado
   rectangle "Decisão\nse... então... senão" as decisao
   rectangle "Iteração\nrepetir enquanto..." as iteracao
   rectangle "FIM do Programa"               as final
 
+  inicio      --> escrevatela
   escrevatela --> leiateclado
   leiateclado --> decisao
   decisao     --> iteracao

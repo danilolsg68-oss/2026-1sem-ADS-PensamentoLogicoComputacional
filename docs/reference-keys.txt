@@ -203,7 +203,7 @@ exercício-1-1
 programação-orientada-a-objetos---parte-1
 breve-história-e-criadores
 paradigma-procedural-estruturado-vs.-orientado-a-objetos
-paradigma-procedural
+paradigma-estruturado-ou-procedural-ou-procedimental
 a-evolução-do-mode-de-mapear-o-mundo-real-em-um-sistema-computacional-abstração-reuso-e-encapsulamento
 os-conceitos-de-oo-aparecendo-no-código
 abordagem-prática-da-teoria-na-programação
