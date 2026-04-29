@@ -6,7 +6,7 @@
 
 #### Exercício 1
 
-``` pseudocode
+```
 Exercício 1) Escreva na tela todas as frutas existentes na variável do tipo "lista".
 
 A variável do tipo lista contém ["Maçã", "Banana", "Uva"]
@@ -14,7 +14,7 @@ A variável do tipo lista contém ["Maçã", "Banana", "Uva"]
 
 #### Código exemplo 1
 
-``` python
+```python
 #!/usr/bin/python
 
 
@@ -27,13 +27,13 @@ for fruta in frutas:
 
 #### Exercício 2
 
-``` pseudocode
+```
 Exercício 2) Utilize um laço for para imprimir todos os números de 10 até 100, mas pulando de 10 em 10 (ex: 10, 20, 30...).
 ```
 
 #### Código exercício 2
 
-``` python
+```python
 
 # O range começa em 10, vai até 101 (para incluir o 100) e pula de 10 em 10
 
@@ -49,7 +49,7 @@ for numero in range(10, 101, 10):
 
 #### Exercício 3
 
-``` pseudocode
+```
 Exercício 3) Aplicar uma operação matemática simples dentro de cada iteração.
 
 Peça ao usuário para digitar um número inteiro. 
@@ -60,7 +60,7 @@ Captura de input() fora do loop e cálculo direto (numero * i) dentro do corpo d
 
 #### Código exercício 3
 
-``` python
+```python
 
 # 1. Captura do input fora do loop (convertendo para inteiro)
 
@@ -82,7 +82,7 @@ for i in range(1, 11):
 
 #### Exercício 4
 
-``` pseudocode
+```
 Aplicar uma operação matemática simples dentro de cada iteração.
 
 Peça ao usuário para digitar um número inteiro. 
@@ -93,7 +93,7 @@ Captura de input() fora do loop e cálculo direto (numero * i) dentro do corpo d
 
 #### Código exercício 4
 
-``` python
+```python
 
 
 
@@ -124,13 +124,13 @@ for i in range(1, 11):
 
 #### Exercício 5
 
-``` pseudocode
+```
 Exercício 5) Peça para o usuário digitar a sua idade. Se a idade for 18 ou mais, exiba a mensagem "Acesso Liberado". Caso contrário, exiba "Acesso Negado".
 ```
 
 #### Código exemplo 5
 
-``` python
+```python
 #!/usr/bin/python
 
 # Passo 1: Solicita a idade ao usuário
@@ -147,14 +147,14 @@ else:
 
 #### Exercício 6
 
-``` pseudocode
+```
 Exercício 6)  Peça ao usuário um número inteiro. 
 O programa deve informar se esse número é Par ou Ímpar.
 ```
 
 #### Código exercício 6
 
-``` python
+```python
 
 # 1. Solicita o número ao usuário e converte para inteiro
 
@@ -171,7 +171,7 @@ else:
 
 #### Exercício 7
 
-``` pseudocode
+```
 Exercício 7) Receba uma temperatura em graus Celsius e escreva na tela a classificação:
 
 - Menor que 15°C: "Frio"
@@ -183,7 +183,7 @@ Exercício 7) Receba uma temperatura em graus Celsius e escreva na tela a classi
 
 #### Código exercício 7
 
-``` python
+```python
 
 
 # 1. Recebe a temperatura (float permite números decimais como 22.5)
@@ -204,7 +204,7 @@ else:
 
 #### Exercício 8
 
-``` pseudocode
+```
 Exercício 8) Um produto custa R$ 100,00. 
 Se o cliente comprar 10 unidades ou mais, ele ganha 10% de desconto no valor total. 
 Se comprar menos, paga o valor integral. 
@@ -213,7 +213,7 @@ Calcule e mostre o valor final da compra.
 
 #### Código exercício 8
 
-``` python
+```python
 
 # 1. Definição das variáveis base
 

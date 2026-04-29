@@ -115,7 +115,7 @@ Vamos fazer um algoritmo para *escrever na tela* a mensagem "meu primeiro progra
 
 Use pesudo-código:
 
-```{pseudocode,  eval=FALSE, echo=TRUE}
+```
 INÍCIO
 
     ESCREVER "meu primeiro programa !"
@@ -129,7 +129,7 @@ Vamos fazer um algoritmo para *ler do teclado* duas parcelas (dois números), so
 
 Use pseudo-código
 
-```{pseudocode,  eval=FALSE, echo=TRUE}
+```
 Início
 
     Escreva "Digite a primeira parcela: "
@@ -177,7 +177,7 @@ Fim
 
 Escreva um pseudo-código para ler dois números do teclado. Decida qual dos dois números é maios e escreva na tela qual dos números é maior.
 
-```{pseudocode,  eval=FALSE, echo=TRUE}
+```
 Início
     Escreva "Digite o primeiro número: "
     Leia numero1
@@ -201,7 +201,7 @@ Fim
 
 Escreva um pseudo-código para desenhar na tela uma moldura envolvendo outro comando de escrever na tela "meu quinto programa". Transforme essa moldura em uma função (ou procedimento).
 
-```{pseudocode,  eval=FALSE, echo=TRUE}
+```
 Início
 
 Procedimento MostrarMoldura()
